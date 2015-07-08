@@ -1,0 +1,447 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.circle {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+.positioned {
+  position: relative;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.noWrap {
+  white-space: nowrap;
+}
+.noSelect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.sc-tr {
+  display: table !important;
+  table-layout: fixed;
+  height: 100%;
+  position: relative;
+}
+.sc-tr > div {
+  display: table-row !important;
+  position: relative;
+}
+.sc-tr > div.fillSpace {
+  height: 100% !important;
+}
+.sc-tc {
+  display: table;
+}
+.sc-tc > div {
+  display: table-cell;
+}
+.sc-tc100 {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.sc-tc100 > div {
+  display: table-cell;
+}
+.fix-tr {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+.fix-tc {
+  position: relative;
+  display: block;
+}
+.noScroll {
+  overflow: hidden;
+}
+.noTapHighlight {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**
+ * @license
+ * MyFonts Webfont Build ID 2893972, 2014-10-02T06:54:11-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: OptimaLTPro-Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/optima/pro-roman/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2008 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2893972
+ * 
+ * © 2014 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'OptimaLTPro-Roman';
+  src: url('../fonts/2C2894_0_0.eot');
+  src: url('../fonts/2C2894_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2C2894_0_0.woff') format('woff'), url('../fonts/2C2894_0_0.ttf') format('truetype');
+}
+p,
+a,
+li {
+  margin: 0;
+  line-height: 1.5;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-size: 13px;
+}
+@media only screen and (min-width: 450px) {
+  p,
+  a,
+  li {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  p,
+  a,
+  li {
+    font-size: 16px;
+  }
+}
+p a {
+  text-decoration: underline;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a.internalLink,
+a.externalLink {
+  text-decoration: underline;
+  color: #005a85;
+  display: block;
+  padding: 10px 0 0 30px;
+}
+a.internalLink:before,
+a.externalLink:before {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  vertical-align: baseline;
+  font-size: 20px;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+cite {
+  font-style: normal;
+}
+.muted {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  margin: 0;
+  display: inline-block;
+  font-weight: normal;
+  color: #005a85;
+  text-rendering: optimizelegibility;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+h3 {
+  color: #999999;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 13px;
+}
+@media only screen and (min-width: 450px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+li {
+  line-height: 1.5;
+}
+.divider {
+  height: 10px;
+}
+html,
+body {
+  font-family: "OptimaLTPro-Roman", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #999999;
+  -webkit-text-size-adjust: none;
+  min-width: 320px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
