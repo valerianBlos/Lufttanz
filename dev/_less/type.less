@@ -24,8 +24,36 @@
 // @import url("//hello.myfonts.net/count/2c2894");
 
   
-@font-face {font-family: 'OptimaLTPro-Roman';src: url('../fonts/2C2894_0_0.eot');src: url('../fonts/2C2894_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2C2894_0_0.woff') format('woff'),url('../fonts/2C2894_0_0.ttf') format('truetype');}
- 
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro';
+  src: url('../fonts/HelveticaNeueLTPro-LtEx.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTPro-LtEx.otf')  format('opentype'),
+       url('../fonts/HelveticaNeueLTPro-LtEx.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-LtEx.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTPro-LtEx.svg#HelveticaNeueLTPro-LtEx') format('svg');
+  font-weight: italic;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro';
+  src: url('../fonts/HelveticaNeueLTPro-MdEx.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTPro-MdEx.otf')  format('opentype'),
+       url('../fonts/HelveticaNeueLTPro-MdEx.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-MdEx.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTPro-MdEx.svg#HelveticaNeueLTPro-MdEx') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro';
+  src: url('../fonts/HelveticaNeueLTPro-Ex.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTPro-Ex.otf')  format('opentype'),
+       url('../fonts/HelveticaNeueLTPro-Ex.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-Ex.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTPro-Ex.svg#HelveticaNeueLTPro-Ex') format('svg');
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+
 // Body text
 // -------------------------
 
@@ -41,7 +69,7 @@ p, a, li {
 
 // Tablet font-size
 
-@media only screen and (min-width : 450px) {
+@media only screen and (min-width : @maxWidthMobile) {
   p, a, li { font-size: @tabletBaseFontSize;}
 }
 
@@ -130,9 +158,9 @@ h5 { font-size: @mobileBaseFontSize;}
 
 // Tablet font-sizes
 
-@media only screen and (min-width : 450px) {
+@media only screen and (min-width : @maxWidthMobile) {
   h1 { font-size: @tabletH1FontSize;}
-  h2 { font-size: @tabletH2FontSize;}
+  h2 { font-size: @tabletH2FontSize;   padding-bottom: 5px;}
 	h3 { font-size: @tabletH3FontSize;}
 	h4 { font-size: @tabletH4FontSize;}
 	

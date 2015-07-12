@@ -285,9 +285,22 @@ table {
 */
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face {
-  font-family: 'OptimaLTPro-Roman';
-  src: url('../fonts/2C2894_0_0.eot');
-  src: url('../fonts/2C2894_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2C2894_0_0.woff') format('woff'), url('../fonts/2C2894_0_0.ttf') format('truetype');
+  font-family: 'HelveticaNeueLTPro';
+  src: url('../fonts/HelveticaNeueLTPro-LtEx.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTPro-LtEx.otf') format('opentype'), url('../fonts/HelveticaNeueLTPro-LtEx.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-LtEx.ttf') format('truetype'), url('../fonts/HelveticaNeueLTPro-LtEx.svg#HelveticaNeueLTPro-LtEx') format('svg');
+  font-weight: italic;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'HelveticaNeueLTPro';
+  src: url('../fonts/HelveticaNeueLTPro-MdEx.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTPro-MdEx.otf') format('opentype'), url('../fonts/HelveticaNeueLTPro-MdEx.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-MdEx.ttf') format('truetype'), url('../fonts/HelveticaNeueLTPro-MdEx.svg#HelveticaNeueLTPro-MdEx') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueLTPro';
+  src: url('../fonts/HelveticaNeueLTPro-Ex.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTPro-Ex.otf') format('opentype'), url('../fonts/HelveticaNeueLTPro-Ex.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-Ex.ttf') format('truetype'), url('../fonts/HelveticaNeueLTPro-Ex.svg#HelveticaNeueLTPro-Ex') format('svg');
+  font-weight: bold;
+  font-style: bold;
 }
 p,
 a,
@@ -297,20 +310,20 @@ li {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-  font-size: 13px;
+  font-size: 12px;
 }
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 749px) {
   p,
   a,
   li {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 1000px) {
   p,
   a,
   li {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 p a {
@@ -325,7 +338,7 @@ a {
 a.internalLink,
 a.externalLink {
   text-decoration: underline;
-  color: #005a85;
+  color: #86bacf;
   display: block;
   padding: 10px 0 0 30px;
 }
@@ -359,62 +372,63 @@ h5 {
   margin: 0;
   display: inline-block;
   font-weight: normal;
-  color: #005a85;
+  color: #ffffff;
   text-rendering: optimizelegibility;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 h3 {
-  color: #999999;
+  color: #ffffff;
 }
 h1 {
-  font-size: 40px;
+  font-size: 18px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 16px;
 }
 h3 {
-  font-size: 20px;
+  font-size: 16px;
 }
 h4 {
   font-size: 16px;
 }
 h5 {
-  font-size: 13px;
+  font-size: 12px;
 }
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 749px) {
   h1 {
-    font-size: 50px;
+    font-size: 18px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 16px;
+    padding-bottom: 5px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 14px;
   }
   h4 {
     font-size: 16px;
   }
   h5 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 1000px) {
   h1 {
-    font-size: 60px;
+    font-size: 22px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   h4 {
     font-size: 16px;
   }
   h5 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 ul,
@@ -430,11 +444,12 @@ li {
 }
 html,
 body {
-  font-family: "OptimaLTPro-Roman", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  color: #999999;
+  font-family: 'HelveticaNeueLTPro', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #000000;
   -webkit-text-size-adjust: none;
-  min-width: 320px;
+  width: 100%;
   height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -444,4 +459,629 @@ body {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+}
+@media only screen and (min-width: 750px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+#theLogo {
+  padding: 20px 0 13px 20px;
+}
+@media only screen and (min-width: 750px) {
+  #theLogo {
+    position: absolute;
+    padding: 0;
+    bottom: 30px;
+    left: 40px;
+  }
+}
+#theMenu {
+  font-weight: normal;
+  z-index: 100;
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 80px;
+  border-bottom: 1px solid #535353;
+}
+@media only screen and (min-width: 750px) {
+  #theMenu {
+    height: 140px;
+  }
+}
+#desktopMenu {
+  position: absolute;
+  padding: 0;
+  bottom: 30px;
+  right: 40px;
+}
+#desktopMenu a {
+  font-size: 15px;
+}
+@media only screen and (min-width: 1000px) {
+  #desktopMenu a {
+    font-size: 18px;
+  }
+}
+#desktopMenu a:hover {
+  color: #86bacf;
+}
+#desktopMenu .submenu {
+  padding-top: 31px;
+}
+#desktopMenu .submenu a {
+  font-size: 12px;
+  color: #ffffff;
+}
+#desktopMenu .submenu a :hover {
+  color: #86bacf;
+}
+@media only screen and (min-width: 1000px) {
+  #desktopMenu .submenu a {
+    font-size: 14px;
+  }
+}
+#desktopMenu .submenu a:hover {
+  color: #86bacf;
+}
+/******************************************************
+                        BIG MENU
+******************************************************/
+.navbar-menu {
+  background-color: #000000;
+  max-width: 1000px;
+  width: calc(100%);
+}
+.navbar-menu .menu {
+  display: block;
+  text-align: left;
+}
+.navbar-menu .menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.navbar-menu .menu li:hover > .submenu {
+  display: block;
+  -webkit-animation-name: showSubMenu;
+  -webkit-animation-duration: .4s;
+}
+.navbar-menu .menu li ul {
+  display: none;
+  position: absolute;
+}
+.navbar-menu .menu li ul li {
+  display: block;
+  padding: 0 14px;
+  margin-left: 0px;
+  height: 33px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.navbar-menu .menu li ul li:first-child {
+  display: block;
+  height: 10px;
+  padding: 0;
+}
+.navbar-menu .menu li ul li a:active {
+  -webkit-animation-name: hideSubMenu;
+  -webkit-animation-duration: .4s;
+}
+/******************************************************
+                        MINI MENU
+******************************************************/
+/* Mini menu */
+.navbar-mini-menu {
+  background-color: #000000;
+  display: none;
+}
+.navbar-mini-menu .menu-select {
+  color: #fff;
+}
+.navbar-mini-menu .menu-select .btn-select {
+  background: url("../images/icon.png") no-repeat;
+  cursor: pointer;
+  position: absolute;
+  height: 30px;
+  width: 15px;
+  right: 20px;
+  top: 20px;
+}
+.navbar-mini-menu .mini-menu-options {
+  display: block;
+}
+.navbar-mini-menu .mini-menu-options li {
+  display: block;
+}
+.navbar-mini-menu .mini-menu-options li:focus {
+  outline: 0;
+}
+@-webkit-keyframes showSubMenu {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes hideSubMenu {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
+}
+/*****************************************************                       MEDIAQUERIES
+*****************************************************/
+@media screen and (max-width: 749px) {
+  /* Elimina los margenes al nav */
+  .navbar-menu {
+    margin: 0;
+    height: 80px;
+  }
+  .navbar-menu .menu {
+    display: none;
+  }
+  /* Muestra el mini menu */
+  .navbar-mini-menu {
+    display: block;
+  }
+  /* Esconde la lista del mini menu */
+  .navbar-mini-menu .mini-menu-options {
+    display: none;
+    border-bottom: 1px solid #535353;
+  }
+  .navbar-mini-menu .mini-menu-options li {
+    display: block;
+    border-bottom: 1px solid #535353;
+  }
+  .navbar-mini-menu .mini-menu-options li a {
+    padding: 14px 0px 10px 20px;
+  }
+  .navbar-mini-menu .mini-menu-options .submenu li {
+    border: none;
+    padding-left: 25px;
+    background: none;
+  }
+  .navbar-mini-menu .mini-menu-options .submenu li a {
+    padding: 0px 0px 12px 10px;
+  }
+  .navbar-mini-menu .mini-menu-options .miniMenuSocial {
+    padding: 13px 0 6px 0;
+    text-align: center;
+  }
+  .navbar-mini-menu .mini-menu-options .miniMenuSocial img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .activeMiniMenu {
+    background: url("../images/arrow_top.png") no-repeat center bottom;
+  }
+  .linkSubMenu {
+    background: url("../images/arrow_down.png") no-repeat center bottom;
+  }
+}
+/*--------------------------------------------------------*/
+/*THE CSS FOR HOLE SITE*/
+.imageStartFullscreenWrapper {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 100%;
+  height: 100%;
+}
+.imageStartFullscreenWrapper .imageStartFullscreen {
+  height: 100%;
+}
+.imageStartFullscreenWrapper video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../images/fullscreenStart.jpg) no-repeat;
+  background-size: cover;
+}
+.imageStartFullscreenWrapper .fullscreenHeadlineBox {
+  position: absolute;
+  bottom: 0px;
+  min-height: 20%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px 0px 10px 0px;
+  border-top: 1px solid #535353;
+}
+@media only screen and (min-width: 750px) {
+  .imageStartFullscreenWrapper .fullscreenHeadlineBox {
+    bottom: 55px;
+  }
+}
+.imageStartFullscreenWrapper .fullscreenHeadlineBox a {
+  font-size: 16px;
+}
+.imageStartFullscreenWrapper .fullscreenHeadlineBox div {
+  padding: 0 20px 0 20px;
+}
+.imageStartFullscreenWrapper .fullscreenHeadlineBox img {
+  padding: 0 10px 1px 0;
+}
+.imageStartFullscreenWrapper .fullscreenHeadlineBox .headlineBoxArrowDown {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapperContainer {
+  margin-bottom: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 1000px) {
+  .wrapperContainer {
+    font-size: 14px;
+  }
+}
+.wrapperContainer .headlineContainer {
+  padding: 20px 20px 20px 20px;
+  margin-top: 90px;
+}
+@media only screen and (min-width: 750px) {
+  .wrapperContainer .headlineContainer {
+    padding: 50px 40px 20px 40px;
+    margin-top: 160px;
+  }
+  .wrapperContainer .headlineContainer .theHeadline {
+    float: left;
+  }
+}
+.wrapperContainer .headlineContainer .textContainer {
+  margin-top: 15px;
+}
+@media only screen and (min-width: 450px) {
+  .wrapperContainer .headlineContainer .textContainer {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 60px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 60px;
+    /* Firefox */
+    column-gap: 60px;
+    max-width: 900px;
+  }
+}
+.wrapperContainer .previewPortfolio {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 450px) {
+  .wrapperContainer .previewPortfolio {
+    display: flex;
+    display: -ms-flexbox;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+}
+.wrapperContainer .previewPortfolio .portfolioElement {
+  height: 210px;
+  width: 100%;
+  position: relative;
+}
+@media only screen and (min-width: 450px) {
+  .wrapperContainer .previewPortfolio .portfolioElement {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .wrapperContainer .previewPortfolio .portfolioElement {
+    width: 25%;
+  }
+}
+.wrapperContainer .previewPortfolio .portfolioElement .theImageTag {
+  width: 100%;
+  height: auto;
+}
+.wrapperContainer .previewPortfolio .portfolioElement .portfolioImage {
+  height: 210px;
+  overflow: hidden;
+}
+.wrapperContainer .previewPortfolio .portfolioElement .portfolioTextHover {
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 32px;
+  padding-top: 15px;
+}
+.wrapperContainer .previewPortfolio .latestProduction {
+  height: 210px;
+  width: 100%;
+  position: relative;
+}
+@media only screen and (min-width: 450px) {
+  .wrapperContainer .previewPortfolio .latestProduction {
+    width: 50%;
+  }
+}
+.wrapperContainer .previewPortfolio .latestProduction .theImageTag {
+  width: 100%;
+  height: auto;
+}
+.wrapperContainer .previewPortfolio .latestProduction .portfolioImage {
+  height: 210px;
+  overflow: hidden;
+}
+.wrapperContainer .previewPortfolio .latestProduction .portfolioTextHover {
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 32px;
+  padding-top: 15px;
+}
+.wrapperContainer .teaserElement {
+  margin-top: 20px;
+}
+.wrapperContainer .teaserElement .teaserImage {
+  width: 100%;
+  position: relative;
+}
+.wrapperContainer .teaserElement .teaserImage .theImageTag {
+  width: 100%;
+  height: auto;
+}
+.wrapperContainer .teaserElement .teaserImage .portfolioImage {
+  overflow: hidden;
+}
+.projectDescription {
+  padding: 20px 20px 0px 20px;
+}
+.projectDescription .tagsProject ul {
+  list-style-type: none;
+}
+.projectDescription .tagsProject ul li {
+  font-size: 12px;
+  line-height: 2;
+}
+@media only screen and (min-width: 750px) {
+  .projectDescription {
+    padding: 20px 40px 0px 40px;
+  }
+  .projectDescription .dividerWhite {
+    display: none;
+  }
+  .projectDescription .tagsProject {
+    float: right;
+  }
+  .projectDescription .tagsProject ul li {
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+  .projectDescription .textProject {
+    float: left;
+    width: 500px;
+  }
+  .projectDescription .theShowElementsMenue {
+    float: right;
+    width: 200px;
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 984px) {
+  .projectDescription {
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+  }
+  .projectDescription .projectMainDescription {
+    display: flex;
+    display: -ms-flexbox;
+  }
+  .projectDescription .projectMainDescription .tagsProject {
+    order: 2;
+    float: none;
+  }
+  .projectDescription .projectMainDescription .textProject {
+    order: 1;
+    float: none;
+    width: 500px;
+    padding-right: 40px;
+  }
+  .projectDescription .theShowElementsMenue {
+    order: 3;
+    float: none;
+    width: 200px;
+    margin-top: 0px;
+    text-align: right;
+  }
+}
+.theShowElementsMenue {
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+.theShowElementsMenue ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+.theShowElementsMenue ul li {
+  line-height: 2;
+}
+.theShowElementsMenue ul li a {
+  background: url("../images/arrow_left.png") no-repeat left center;
+  padding-left: 15px;
+  padding-top: 6px;
+}
+.theShowElementsMenue ul li a:hover {
+  background: none;
+  color: #86bacf;
+}
+.allProjectsMenue {
+  margin-top: 15px;
+}
+.allProjectsMenue ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+.allProjectsMenue ul li {
+  line-height: 2;
+}
+.allProjectsMenue ul li a {
+  background: url("../images/arrow_left.png") no-repeat left center;
+  padding-left: 15px;
+  padding-top: 6px;
+}
+.allProjectsMenue ul li a:hover {
+  background: none;
+  color: #86bacf;
+}
+@media only screen and (min-width: 750px) {
+  .allProjectsMenue {
+    text-align: right;
+    margin-top: -15px;
+  }
+  .allProjectsMenue ul li {
+    margin-left: 35px;
+    display: inline-block;
+  }
+}
+/*--------------------------------------------------------*/
+/*THE TEXTSITE*/
+.headlineContainer .headlineTextContent {
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 750px) {
+  .headlineContainer .projectDescriptionText .dividerWhite {
+    display: none;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .headlineContainer .textWrapper {
+    float: left;
+    width: 450px;
+    padding-right: 33px;
+  }
+}
+.footerTextSite {
+  text-align: center;
+  height: 30px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/*--------------------------------------------------------*/
+/*THE FOOTER*/
+#theFooter {
+  display: none;
+}
+@media only screen and (min-width: 750px) {
+  #theFooter {
+    display: block;
+    position: absolute;
+    background-color: black;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+#theFooter #footerLeft {
+  float: left;
+  padding-top: 7px;
+}
+#theFooter #footerRight {
+  float: right;
+}
+/*--------------------------------------------------------*/
+/*THE BREADCRUMPS*/
+#breadcrumps {
+  float: right;
+  margin-right: 40px;
+}
+#breadcrumps ul {
+  list-style-type: none;
+}
+#breadcrumps ul li {
+  display: inline-block;
+  font-size: 10px;
+}
+#breadcrumps ul li span {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#breadcrumps ul li a {
+  font-size: 10px;
+}
+#breadcrumps ul li a:hover {
+  text-decoration: underline;
+}
+#breadcrumps ul li:last-child a {
+  color: #86bacf;
+}
+/*--------------------------------------------------------*/
+/*GENERAL STYLING*/
+a.blueLink {
+  color: #86bacf;
+}
+a.linkFullscreen:hover {
+  text-decoration: underline;
+}
+a {
+  font-size: 12px;
+}
+@media only screen and (min-width: 1000px) {
+  a {
+    font-size: 14px;
+  }
+}
+.arrowLink {
+  padding: 0px 7px 2px 0;
+}
+h1 {
+  color: #ffffff;
+}
+.dividerWhite {
+  width: 40px;
+  height: 1px;
+  background-color: #535353;
+  margin: 20px 0 20px 0;
+}
+.dividerBlue {
+  top: 30px;
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  background-color: #86bacf;
 }

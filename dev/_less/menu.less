@@ -1,0 +1,259 @@
+#theLogo
+{
+  padding: 20px 0 13px 20px;
+    
+    @media only screen and (min-width: @minWidthTablet) 
+    {
+      position: absolute;
+      padding: 0;
+      bottom: 30px;
+      left: 40px
+    }
+}
+
+#theMenu
+{
+  font-weight: normal;
+  z-index: 100;
+  background-color: @bodyBackground;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 80px;
+  border-bottom: 1px solid @borderColor;
+
+    @media only screen and (min-width: @minWidthTablet) 
+    {
+      height: 140px;
+    }
+}
+
+#desktopMenu
+{
+  position: absolute;
+  padding: 0;
+  bottom: 30px;
+  right: 40px;
+
+  a
+  {
+    font-size: @tabletMenuFont;
+
+    @media only screen and (min-width: @minWidthDesktop) 
+    {
+      font-size: @desktopMenuFont;
+    }
+  }
+
+  a:hover
+  {
+    color: @blue;
+  }
+
+  .submenu
+  {
+      padding-top: 31px;
+
+    a
+    {
+      font-size: @tabletSubMenuFont;
+      color: @white;
+      
+      :hover
+      {
+        color: @blue;
+      }
+
+      @media only screen and (min-width: @minWidthDesktop) 
+      {
+        font-size: @desktopSubMenuFont;
+      }
+    }
+
+    a:hover
+    {
+      color: @blue;
+    }
+  }
+}
+
+/******************************************************
+                        BIG MENU
+******************************************************/
+.navbar-menu {
+  background-color: @bodyBackground;
+  
+  max-width: 1000px;
+  width: calc(100%);
+}
+
+.navbar-menu .menu {
+  display: block;
+  text-align: left;
+}
+
+.navbar-menu .menu li {
+  display: inline-block;
+  margin-left: 20px;
+
+}
+
+.navbar-menu .menu li:hover > .submenu {
+  display: block;
+  -webkit-animation-name: showSubMenu;
+  -webkit-animation-duration: .4s;
+}
+
+.navbar-menu .menu li ul {
+  display: none;
+  position: absolute;
+}
+
+.navbar-menu .menu li ul li {
+  display: block;
+  padding: 0 14px;
+  margin-left: 0px;
+  height: 33px;
+  background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.navbar-menu .menu li ul li:first-child {
+  display: block;
+  height: 10px;
+  padding: 0;
+}
+
+.navbar-menu .menu li ul li a:active {
+  -webkit-animation-name: hideSubMenu;
+  -webkit-animation-duration: .4s;
+}
+
+/******************************************************
+                        MINI MENU
+******************************************************/
+/* Mini menu */
+.navbar-mini-menu {
+  background-color: @bodyBackground;
+  display: none;
+}
+
+.navbar-mini-menu .menu-select {
+  color: #fff;
+  //padding: 1rem 1.5rem;
+}
+
+.navbar-mini-menu .menu-select .btn-select {
+  background: url("../images/icon.png") no-repeat;
+  cursor: pointer;
+  position: absolute;
+  height: 30px;
+  width: 15px;
+  right: 20px;
+  top: 20px;
+}
+
+.navbar-mini-menu .mini-menu-options {
+  display: block;
+}
+
+.navbar-mini-menu .mini-menu-options li {
+  display: block;
+
+}
+
+.navbar-mini-menu .mini-menu-options li:focus {
+  outline: 0;
+}
+
+
+
+@-webkit-keyframes showSubMenu {
+    0% {
+      transform: scale(0,0);
+    }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+@-webkit-keyframes hideSubMenu {
+  0% {
+    transform: scale(1,1);
+  }
+  100% {
+    transform: scale(0,0);
+  }
+}
+
+
+/*****************************************************                       MEDIAQUERIES
+*****************************************************/
+@media screen and (max-width: @maxWidthMobile) {
+  /* Elimina los margenes al nav */
+  .navbar-menu {
+    margin: 0;
+    height: 80px;
+  
+    .menu {
+      display: none;
+    }
+
+  }
+  
+  /* Muestra el mini menu */
+  .navbar-mini-menu {
+    display: block;
+  }
+  
+  /* Esconde la lista del mini menu */
+  .navbar-mini-menu .mini-menu-options {
+    display: none;
+    border-bottom: 1px solid @borderColor;
+    
+      li {
+        display: block;
+        border-bottom: 1px solid @borderColor;
+        
+        a
+        {
+            padding: 14px 0px 10px 20px;
+        }
+      }
+
+      .submenu li
+      {
+        border: none;
+        padding-left: 25px;
+        background: none;
+
+        a
+        {
+            padding: 0px 0px 12px 10px;
+        }
+      }
+
+      .miniMenuSocial
+      {
+        padding: 13px 0 6px 0;
+        text-align: center;
+
+        img
+        {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+  }
+ 
+   .activeMiniMenu
+   {
+    background: url("../images/arrow_top.png") no-repeat center bottom;
+   }
+
+  .linkSubMenu
+  {
+    background: url("../images/arrow_down.png") no-repeat center bottom;
+  }
+
+}

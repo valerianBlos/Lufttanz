@@ -4,7 +4,7 @@
 @black:     #000;
 @white:     #fff;
 
-@blue: 			#005a85;
+@blue: 			#86bacf;
 @gray: 			#999;
 
 @grayLight: #e7e7e7;
@@ -13,8 +13,10 @@
 @grayF8: 		#f8f8f8;
 
 
-@bodyBackground:               @white;
-@textColor:                    @gray;
+@bodyBackground:               @black;
+@textColor:                    @white;
+@linkColor: 				   @blue;
+@borderColor:				   #535353;
 
 
 
@@ -31,7 +33,11 @@
 // -------------------------
 
 @maxWidthMobile: 					749px;
+@widhtBreakpointTablet:				450px;
 @minWidthTablet: 					750px;
+@widhtBreakpointDesktop:			850px;
+@widhtBreakpointFloat: 				984px;
+
 
 @maxWidthTablet: 					999px;
 @minWidthDesktop: 					1000px;
@@ -39,38 +45,36 @@
 // Typography
 // -------------------------
 
-@baseFontFamily:    "OptimaLTPro-Roman", Helvetica, Arial, sans-serif;
+@baseFontFamily:    'HelveticaNeueLTPro', Helvetica, Arial, sans-serif;
 
 @headingsFontWeight:    normal;
-@headingsColor:         @blue;
+@headingsColor:         @white;
 
 @baseLineHeight:          1.5;
 
 @menueFontSize:           24px;
 
-@mobileH1FontSize:        40px;
-@mobileH2FontSize:        24px;
-@mobileH3FontSize:        20px;
+@mobileH1FontSize:        18px;
+@mobileH2FontSize:        16px;
+@mobileH3FontSize:        16px;
 @mobileH4FontSize:        16px;
-@mobileBaseFontSize:      13px;
+@mobileBaseFontSize:      12px;
 
 
-@tabletH1FontSize:        50px;
-@tabletH2FontSize:        24px;
-@tabletH3FontSize:        20px;
+@tabletH1FontSize:        18px;
+@tabletH2FontSize:        16px;
+@tabletH3FontSize:        14px;
 @tabletH4FontSize:        16px;
-@tabletBaseFontSize:      16px;
+@tabletBaseFontSize:      12px;
+@tabletMenuFont:	      15px;
+@tabletSubMenuFont:	      12px;
 
-@desktopH1FontSize:       60px;
-@desktopH2FontSize:       24px;
-@desktopH3FontSize:       20px;
+@desktopH1FontSize:       22px;
+@desktopH2FontSize:       20px;
+@desktopH3FontSize:       18px;
 @desktopH4FontSize:       16px;
-@desktopBaseFontSize:     16px;
+@desktopBaseFontSize:     14px;
+@desktopMenuFont:	      18px;
+@desktopSubMenuFont:	  14px;
 
 
-// Images
-// ------
-
-
-@mobileLogo_2x: 						url('../images/logo_mobile_@2x.png') no-repeat top left;
-@tabletLogo_2x: 						url('../images/logo_tablet_@2x.png') no-repeat top left;

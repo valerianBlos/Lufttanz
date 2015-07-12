@@ -1,0 +1,594 @@
+/*--------------------------------------------------------*/
+/*THE CSS FOR HOLE SITE*/
+
+
+.imageStartFullscreenWrapper
+{ 
+	position: absolute;
+	left: 0;
+	top: 18px;
+	width: 100%;
+	height: 100%;
+
+	.imageStartFullscreen 
+	{	
+		height: 100%;
+	}
+
+	 video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(../images/fullscreenStart.jpg) no-repeat;
+	background-size: cover;
+	}
+
+	.fullscreenHeadlineBox
+	{
+		position: absolute;
+	  	bottom: 0px;
+	  	  min-height: 20%;
+	  	width: 100%;
+	  	text-align: center;
+	  	background-color: rgba(0,0,0,0.7);
+	  	padding: 25px 0px 10px 0px;
+	  	border-top: 1px solid @borderColor;
+
+	    @media only screen and (min-width: @minWidthTablet) 
+	    {
+  			bottom: 55px;
+		}
+
+	  	a
+	  	{
+	  		font-size: @mobileH2FontSize;
+	  	} 
+
+	  	div
+	  	{
+	  		padding: 0 20px 0 20px;
+	  	}
+
+	  	img
+	  	{
+	  		  padding: 0 10px 1px 0;
+	  	}
+
+	  	.headlineBoxArrowDown
+	  	{
+		  position: absolute;
+		  bottom: 10px;
+		  left: 0;
+		  right: 0;
+		  margin-left: auto;
+		  margin-right: auto;
+	  	}
+	}
+
+}
+
+
+.wrapperContainer
+{
+	margin-bottom: 40px;
+	  font-size: 12px;
+	  line-height: 1.5;
+
+
+	    @media only screen and (min-width: @minWidthDesktop) 
+		{
+		  font-size: @desktopBaseFontSize;
+		}
+
+	.headlineContainer{
+		padding: 20px 20px 20px 20px;
+		margin-top: 90px;
+
+	    @media only screen and (min-width: @minWidthTablet) 
+	    {
+	    	padding: 50px 40px 20px 40px;
+	     	margin-top: 160px;
+
+	      .theHeadline
+	      {
+	      	float: left;
+	      }
+	    }
+
+		.textContainer
+		{
+			margin-top: 15px;
+
+			@media only screen and (min-width: @widhtBreakpointTablet) 
+			{
+		        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+	   		    -moz-column-count: 2; /* Firefox */
+	    	   column-count: 2;
+	    	    -webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+			    -moz-column-gap: 60px; /* Firefox */
+			    column-gap: 60px;
+			    max-width: 900px;
+			}
+		}
+	}
+
+	.previewPortfolio
+	{
+		margin-top: 20px;
+
+		@media only screen and (min-width: @widhtBreakpointTablet) 
+		{
+			display: flex;
+			display: -ms-flexbox;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-top: 0px;
+		}
+
+			.portfolioElement
+			{
+				height: 210px;
+				width: 100%;
+				position: relative;
+
+				@media only screen and (min-width: @widhtBreakpointTablet) 
+				{
+					width: 50%;
+				}
+
+				@media only screen and (min-width: @widhtBreakpointDesktop) 
+				{
+					width: 25%;
+				}
+
+
+				.theImageTag
+				{
+					width: 100%;
+					height: auto;
+				}
+
+				.portfolioImage
+				{
+					height: 210px;
+					overflow: hidden;
+				}
+
+				.portfolioTextHover
+				{
+					text-align: center;
+					bottom: 0px;
+					position: absolute;    
+					left:0;
+				    right:0;
+				    margin-left:auto;
+				    margin-right:auto;
+				    background-color: rgba(0,0,0,0.7);
+					  height: 32px;
+					  padding-top: 15px;				    
+				}
+			}
+
+		.latestProduction
+		{
+				height: 210px;
+				width: 100%;
+				position: relative;
+
+				@media only screen and (min-width: @widhtBreakpointTablet) 
+				{
+					width: 50%;
+				}
+
+				.theImageTag
+				{
+					width: 100%;
+					height: auto;
+				}
+
+				.portfolioImage
+				{
+					height: 210px;
+					overflow: hidden;
+				}
+
+				.portfolioTextHover
+				{
+					text-align: center;
+					bottom: 0px;
+					position: absolute;    
+					left:0;
+				    right:0;
+				    margin-left:auto;
+				    margin-right:auto;
+				    background-color: rgba(0,0,0,0.7);
+					  height: 32px;
+					  padding-top: 15px;				    
+				}		
+		}
+	}
+
+	.teaserElement
+	{
+		margin-top: 20px;
+
+
+			.teaserImage
+			{
+				width: 100%;
+				position: relative;
+
+
+				.theImageTag
+				{
+					width: 100%;
+					height: auto;
+				}
+
+				.portfolioImage
+				{
+					overflow: hidden;
+				}
+
+			}
+	}
+}
+
+		.projectDescription
+		{
+			padding: 20px 20px 0px 20px;
+
+			.tagsProject
+			{
+				ul
+				{
+					list-style-type: none;
+
+					li
+					{
+						font-size: 12px;
+						line-height: 2;
+					}
+				}
+			}
+			
+			@media only screen and (min-width: @minWidthTablet) 
+			{
+				padding: 20px 40px 0px 40px;
+
+				.dividerWhite
+				{
+					display: none;
+				}
+
+				.tagsProject
+				{
+					float: right;
+					
+					ul li
+					{
+					  margin-bottom: 20px;
+					  line-height: 1.1;
+					}
+				}
+
+				.textProject
+				{
+					float: left;
+					width: 500px;
+				}
+
+				.theShowElementsMenue
+				{
+					float: right;
+					width: 200px;
+					margin-top: 25px;
+				}
+			}
+
+			@media only screen and (min-width: @widhtBreakpointFloat) 
+			{
+				display: flex;
+				display: -ms-flexbox;
+				justify-content: space-between;
+
+				.projectMainDescription
+				{
+					display: flex;
+					display: -ms-flexbox;
+				
+					.tagsProject
+					{
+						order: 2;
+						float: none;
+					}
+
+					.textProject
+					{
+						order: 1;
+						float: none;
+						width: 500px;
+						padding-right: 40px;
+					}
+				}
+
+				.theShowElementsMenue
+				{
+					order: 3;
+					float: none;
+					width: 200px;
+					margin-top: 0px;
+					  text-align: right;
+				}				
+			}
+		}
+
+
+		.theShowElementsMenue
+		{
+			margin-top: 15px;
+			padding-bottom: 20px;
+
+			ul 
+			{
+				list-style-type: none;
+				margin-top: 15px;
+
+				li
+				{
+					line-height: 2;
+
+					a
+					{
+						background: url("../images/arrow_left.png") no-repeat left center;
+						padding-left: 15px;
+						padding-top: 6px;
+					}
+
+					a:hover
+					{
+						background: none;
+						color: @blue;
+					}
+				}
+
+			}
+		}
+
+		.allProjectsMenue
+		{
+			margin-top: 15px;
+
+			ul 
+			{
+				list-style-type: none;
+				margin-top: 15px;
+
+				li
+				{
+					line-height: 2;
+
+					a
+					{
+						background: url("../images/arrow_left.png") no-repeat left center;
+						padding-left: 15px;
+						padding-top: 6px;
+					}
+
+					a:hover
+					{
+						background: none;
+						color: @blue;
+					}
+				}
+			}
+
+			 @media only screen and (min-width: @minWidthTablet) 
+		    {
+		    	text-align: right;
+		    	margin-top: -15px;
+
+			      ul
+			      {
+			      	li
+			      	{
+			      		margin-left: 35px;
+			      		display: inline-block;
+			      	}
+			      }
+		    }
+		}
+
+/*--------------------------------------------------------*/
+/*THE TEXTSITE*/
+
+	.headlineContainer
+	{
+		.headlineTextContent
+		{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+			@media only screen and (min-width: @minWidthTablet) 
+			{
+  				.projectDescriptionText
+  				{
+  					.dividerWhite
+  					{
+  						display: none;
+  					}
+  				}
+  			}
+
+		.textWrapper
+		{
+			@media only screen and (min-width: @minWidthTablet) 
+			{
+  				float: left;
+  				width: 450px;
+  				padding-right: 33px;
+  			}
+		}
+	}
+
+		.footerTextSite
+		{
+			text-align: center;
+			height: 30px;
+			position: fixed;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		}
+
+/*--------------------------------------------------------*/
+/*THE FOOTER*/
+
+#theFooter
+{
+	display: none;
+
+		@media only screen and (min-width: @minWidthTablet) 
+		{
+			display: block;  
+			position: absolute;
+		    background-color: black;
+		    height: 40px;
+		    padding-left: 40px;
+		    padding-right: 40px;
+		    padding-top: 15px;
+		    position: fixed;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+
+		}
+
+	#footerLeft
+	{
+		float: left;
+		padding-top: 7px;
+	}
+
+	#footerRight
+	{
+		float: right;
+	}
+}
+
+/*--------------------------------------------------------*/
+/*THE BREADCRUMPS*/
+
+#breadcrumps
+{
+	float: right;
+ 	margin-right: 40px;
+
+	ul
+	{
+		list-style-type: none;
+
+		li
+		{
+		  display: inline-block;
+		  font-size: 10px;
+
+		  span
+		  {
+		  	margin-left: 8px;
+		  	margin-right: 8px;
+		  }
+
+		  a
+		  {
+		   	font-size: 10px;	
+		  }
+		  a:hover
+		  {
+		   	text-decoration: underline;	
+		  }
+		}
+
+		li:last-child
+		{
+			a
+			{
+				color: @blue;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------*/
+/*GENERAL STYLING*/
+
+
+//LINKS
+a.blueLink
+{
+	color: @blue;
+}
+
+a.linkFullscreen:hover
+{
+	text-decoration: underline;
+}
+
+a
+{
+	font-size: 12px;
+
+	  @media only screen and (min-width: @minWidthDesktop) 
+	  {
+	    font-size: @desktopBaseFontSize;
+	  }
+}
+
+.arrowLink
+{
+	padding: 0px 7px 2px 0;
+}
+
+//HEADLINES
+h1
+{
+	color: @white;
+
+}
+
+//ELEMENTS
+.dividerWhite
+{
+	width: 40px;
+	height: 1px;
+	background-color: @borderColor;
+	margin: 20px 0 20px 0;
+
+}
+
+
+.dividerBlue
+{  
+	top: 30px;
+  	position: absolute;
+	width: 80px;
+	height: 1px;
+	background-color: @blue;
+}
+
+
+
+
+
+
+
+
