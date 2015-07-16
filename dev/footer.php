@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/focuspoint.js"></script>
 	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

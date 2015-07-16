@@ -14,7 +14,7 @@
 #theMenu
 {
   font-weight: normal;
-  z-index: 100;
+  z-index: 101;
   background-color: @bodyBackground;
   position: fixed;
   width: 100%;
@@ -101,7 +101,7 @@
 .navbar-menu .menu li:hover > .submenu {
   display: block;
   -webkit-animation-name: showSubMenu;
-  -webkit-animation-duration: .4s;
+  -webkit-animation-duration: 0.4s;
 }
 
 .navbar-menu .menu li ul {
@@ -170,19 +170,19 @@
 
 @-webkit-keyframes showSubMenu {
     0% {
-      transform: scale(0,0);
+      opacity: 0;
     }
   100% {
-    transform: scale(1,1);
+       opacity: 1;
   }
 }
 
 @-webkit-keyframes hideSubMenu {
   0% {
-    transform: scale(1,1);
+    opacity: 1;
   }
   100% {
-    transform: scale(0,0);
+    opacity: 0;
   }
 }
 
@@ -214,10 +214,12 @@
       li {
         display: block;
         border-bottom: 1px solid @borderColor;
+        margin-bottom: 13px;
+        padding-bottom: 8px;
         
         a
         {
-            padding: 14px 0px 10px 20px;
+              padding: 20px 0px 20px 20px;
         }
       }
 
@@ -226,7 +228,8 @@
         border: none;
         padding-left: 25px;
         background: none;
-
+        margin-top: 7px;
+        margin-bottom: 7px;
         a
         {
             padding: 0px 0px 12px 10px;
@@ -245,15 +248,16 @@
         }
       }
   }
- 
-   .activeMiniMenu
-   {
-    background: url("../images/arrow_top.png") no-repeat center bottom;
-   }
 
-  .linkSubMenu
+
+  .deactivate
   {
     background: url("../images/arrow_down.png") no-repeat center bottom;
+  }
+
+  .activate
+  {
+    background: url("../images/arrow_top.png") no-repeat center bottom;
   }
 
 }

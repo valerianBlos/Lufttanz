@@ -112,7 +112,7 @@
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
             loopBottom: false,
-            loopTop: false,
+            loopTop: true,
             loopHorizontal: true,
             continuousVertical: false,
             normalScrollElements: null,
