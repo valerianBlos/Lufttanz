@@ -18,7 +18,13 @@ Probleme: Links in Menu funktionieren noch nicht
 
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+<link href="video-js/video-js.css" rel="stylesheet">
+<script src="video-js/video.js"></script>
+<script>
+  videojs.options.flash.swf = "video-js/video-js.swf"
+</script>
 
 </head>
 <body>

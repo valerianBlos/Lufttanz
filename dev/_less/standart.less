@@ -120,12 +120,57 @@
 		}
 	}
 
+	.containerText{
+		padding: 20px 20px 20px 20px;
+		margin-top: 90px;
+
+			.headlineTextContent
+			{
+				padding-bottom: 20px;
+			}
+
+		@media only screen and (min-width: @minWidthTablet) 
+		{
+			padding: 50px 40px 20px 40px;
+			margin-top: 160px;
+
+			.onlyMobile
+			{
+				display: none;
+			}
+	
+			.textLeft
+			{
+	  			float: left;  
+	  			width: 440px;
+  				padding-right: 28px;
+			}
+		}
+	}
+
 	.portfolioImageShow
 	{
+		margin-top: 37px; 
+
+		@media only screen and (min-width: @widhtBreakpointTablet) 
+		{
+			margin-top: 0px;
+		}
+
 		.theImageTag
 		{
 			max-width: 100%;
   			max-height: 250px;
+
+	  		@media only screen and (min-width: @minWidthTablet) 
+			{
+				max-height: 350px;
+			}
+
+	  		@media only screen and (min-width: @maxWidthTablet) 
+			{
+				max-height: 550px;
+			}
 		}
 
 	}
@@ -317,14 +362,15 @@
 		.textProject
 		{
 			float: left;
-			width: 500px;
+			width: 450px;
 		}
 
 		.theShowElementsMenue
 		{
 			float: right;
 			width: 200px;
-			margin-top: 25px;
+			margin-top: 0px;
+			margin-left: 10px;
 		}
 	}
 
@@ -419,6 +465,102 @@
 	}
 }
 
+		.projectDescriptionRelated
+		{
+			margin-top: 0px
+			padding: 0px 0px 0px 20px;
+
+			@media only screen and (min-width: @widhtBreakpointTablet) 
+			{
+				padding: 0px 0px 0px 40px;
+
+				margin-top: 0px;
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+				-moz-column-gap: 60px; /* Firefox */
+				column-gap: 60px;
+				max-width: 900px;
+			}
+		}
+
+	.releatedProjects
+	{
+		margin-top: 20px;
+
+		.linkToProject
+		{
+
+				.hiddenDescription
+				{
+					display: none;
+				}
+
+				:hover > .portfolioTextHover span
+				{
+					color: @blue;
+					background: url('../images/arrow_left.png') no-repeat left center;
+					padding-left: 10px;
+  					padding-top: 3px;
+				}
+
+				height: 210px;
+				width: 100%;
+				position: relative;
+
+				@media only screen and (min-width: @widhtBreakpointTablet) 
+				{
+					width: 50%;
+				}
+
+				@media only screen and (min-width: @widhtBreakpointDesktop) 
+				{
+					width: 25%;
+				}
+
+			.portfolioElement
+			{
+
+				.a
+				{
+					width: 100%;
+					height: auto;
+				}
+
+				.portfolioImage
+				{
+					img
+					{ 
+						max-height: 150px;
+										@media only screen and (min-width: @widhtBreakpointTablet) 
+				{
+					max-height: 260px;
+				}
+						
+					}
+
+					overflow: hidden;
+				}
+
+				.portfolioTextHover
+				{
+					text-align: center;
+					bottom: 0;
+					position: absolute;    
+					left:0;
+					right:0;
+					margin-left:auto;
+					margin-right:auto;
+					background-color: rgba(0,0,0,0.7);
+					padding-top: 10px;	
+					padding-bottom: 10px;
+					height: auto;
+				}
+			}
+		}
+	}
+
 .allProjectsMenue
 {
 	margin-top: 15px;
@@ -487,13 +629,18 @@
 
 .headlineContainer
 {
+	.projectDescription
+	{
+
+	}
+
 	h1
 	{
 		position: fixed;
 		z-index: 100;
-		  background-color: black;
-  padding: 10px 10px 5px 10px;
-  margin-left: -10px;
+		background-color: black;
+	  padding: 10px 10px 5px 10px;
+	  margin-left: -10px;
 	}
 
 	@media only screen and (min-width: @widhtBreakpointTablet) 
@@ -544,6 +691,8 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
+	  background-color: black;
+  padding-top: 15px;
 }
 
 /*--------------------------------------------------------*/
@@ -600,7 +749,7 @@
 			li
 			{
 				display: inline-block;
-				font-size: 10px;
+				font-size: 12px;
 
 				span
 				{
@@ -666,13 +815,23 @@ h1
 
 }
 
+.headlineBottom
+{
+	padding: 20px 0 20px 20px;
+
+	@media only screen and (min-width: @minWidthTablet) 
+	{
+		padding: 20px 0 20px 40px;
+	}
+}
+
 //ELEMENTS
 .dividerWhite
 {
 	width: 40px;
 	height: 1px;
 	background-color: @borderColor;
-	margin: 20px 0 20px 0;
+	margin: 20px 0 35px 0;
 
 }
 
@@ -695,13 +854,49 @@ position: absolute;
 
 .slick-prev
 {
-	left: 10px;
+	top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+	background: transparent url("../images/back.png") no-repeat center center;
+	border: none;
+	padding: 0 0 0 0;
+	width: 50px;
+	height: 50px;
+
+	@media only screen and (min-width: @minWidthTablet) 
+	{
+		left: 40px;
+	}
 }
+
+.slick-prev:hover
+	{
+		background: transparent url("../images/back_hover.png") no-repeat center center;
+	}
 
 .slick-next
 {
-	right: 10px;
+	top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+	background: transparent url("../images/forward.png") no-repeat center center;
+	border: none;
+	padding: 0 0 0 0;
+	width: 50px;
+	height: 50px;
+
+	@media only screen and (min-width: @minWidthTablet) 
+	{
+		right: 40px;
+	}
 }
+
+.slick-next:hover
+	{
+		background: transparent url("../images/forward_hover.png") no-repeat center center;
+	}
 
 
 

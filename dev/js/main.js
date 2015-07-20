@@ -215,13 +215,23 @@ DOCUMENT READY FUNCTION
     _mainConstructor();
 
   $('.portfolioImageShow').slick({
-    lazyLoad: 'ondemand',
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true
+    infinite: true,
+    speed: 300,
+    slidesToScroll: 1,
+    cssEase: 'linear',
+    centerMode: true,
+    variableWidth: true
   });
+
+  $('.releatedProjects').slick({
+    infinite: true,
+    speed: 300,
+    slidesToScroll: 1,
+    cssEase: 'linear',
+    centerMode: true,
+    variableWidth: true
+  });
+  
 
     //check if window resize
     $( window ).resize(function() 

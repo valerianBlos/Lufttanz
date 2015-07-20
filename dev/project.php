@@ -8,12 +8,11 @@
 		<h1>Diamond Legaue Weltklasse Leichtatheletik</h1>
 	</div>
 	<div class="portfolioImageShow">
-
-<div><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
-  <div><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
-  <div><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
-
-
+		<div><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
+		<div><img src="images/fullscreenStart1.jpg" alt="" class="theImageTag"></div>
+		<div><img src="images/fullscreenStart2.jpg" alt="" class="theImageTag"></div>
+		<div><img src="images/fullscreenStart3.jpg" alt="" class="theImageTag"></div>
+		<div><img src="images/fullscreenStart4.jpg" alt="" class="theImageTag"></div>
 	</div>
 	<div class="projectDescription">
 		<div class="projectMainDescription">
@@ -35,9 +34,9 @@
 		<div class="theShowElementsMenue">
 			<h3>Show Elements</h3>
 				<ul>
-					<li><a href="#">Luftakrobatik</a></li>
-					<li><a href="#">Seiltanz</a></li>
-					<li><a href="#">Schauspiel</a></li>
+					<li><a href="showElementDetail.php">Luftakrobatik</a></li>
+					<li><a href="showElementDetail.php">Seiltanz</a></li>
+					<li><a href="showElementDetail.php">Schauspiel</a></li>
 				</ul>
 		</div>
 	</div>
