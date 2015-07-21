@@ -26,9 +26,12 @@ KONSTRUKTOR FUNCTION
 
   function _mainConstructor()
   {
+          //fadein the main Wrapper on Load
       initTheMenue();
       subMenuAccordion();
-      $('.focuspoint').focusPoint(); //init focus point plugin
+
+      $('.focuspoint').focusPoint();
+
       $("#startVideoTeaser").fitVids();
       checkWindowSize();
       textAnimation(); //text expand
@@ -36,10 +39,22 @@ KONSTRUKTOR FUNCTION
 
       $('.submenuMini').each(function(){$(this).slideToggle();});
 
+
       //Check if Startsite - if so: init fullpage plugin, deactivate breadcrumps and align videoContainer
       if (window.location.pathname == "/Lufttanz/dev/index.php") 
       {
-        $('#fullpage').fullpage({loopBottom: true});
+        $('#fullpage').fullpage({
+          loopBottom: true,
+
+          onLeave: function(index, nextIndex, direction){
+              $(".fullscreenHeadlineBox").fadeOut(200,'swing');
+          },
+
+          afterLoad: function(anchorLink, index){
+              $(".fullscreenHeadlineBox").delay( 500 ).fadeIn(600,'swing');
+          }
+
+        });
 
         $(".headlineBoxArrowDown").click(function(e)
         {
@@ -211,6 +226,7 @@ GENERAL STYLING
 DOCUMENT READY FUNCTION
 -----------------------*/
   $(document).on("ready",function() {
+        
 
     _mainConstructor();
 
@@ -231,8 +247,9 @@ DOCUMENT READY FUNCTION
     centerMode: true,
     variableWidth: true
   });
-  
 
+      //$("#mainWrapper").delay(200).fadeIn(500, function(){});
+      $("#mainWrapper").delay(100).fadeTo(400, 1, function(){});
     //check if window resize
     $( window ).resize(function() 
     {

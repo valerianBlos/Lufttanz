@@ -284,24 +284,33 @@ table {
  * © 2014 MyFonts Inc
 */
 /* @import must be at top of file, otherwise CSS will not work */
+/*
 @font-face {
   font-family: 'HelveticaNeueLTPro';
-  src: url('../fonts/HelveticaNeueLTPro-LtEx.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTPro-LtEx.otf') format('opentype'), url('../fonts/HelveticaNeueLTPro-LtEx.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-LtEx.ttf') format('truetype'), url('../fonts/HelveticaNeueLTPro-LtEx.svg#HelveticaNeueLTPro-LtEx') format('svg');
+  src: url('../fonts/HelveticaNeueLTPro-LtEx.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTPro-LtEx.otf')  format('opentype'),
+       url('../fonts/HelveticaNeueLTPro-LtEx.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-LtEx.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTPro-LtEx.svg#HelveticaNeueLTPro-LtEx') format('svg');
   font-weight: italic;
   font-style: italic;
 }
+
+
+
 @font-face {
   font-family: 'HelveticaNeueLTPro';
-  src: url('../fonts/HelveticaNeueLTPro-MdEx.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTPro-MdEx.otf') format('opentype'), url('../fonts/HelveticaNeueLTPro-MdEx.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-MdEx.ttf') format('truetype'), url('../fonts/HelveticaNeueLTPro-MdEx.svg#HelveticaNeueLTPro-MdEx') format('svg');
+  src: url('../fonts/HelveticaNeueLTPro-MdEx.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTPro-MdEx.otf')  format('opentype'),
+       url('../fonts/HelveticaNeueLTPro-MdEx.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-MdEx.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTPro-MdEx.svg#HelveticaNeueLTPro-MdEx') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
+
 @font-face {
   font-family: 'HelveticaNeueLTPro';
-  src: url('../fonts/HelveticaNeueLTPro-Ex.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueLTPro-Ex.otf') format('opentype'), url('../fonts/HelveticaNeueLTPro-Ex.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-Ex.ttf') format('truetype'), url('../fonts/HelveticaNeueLTPro-Ex.svg#HelveticaNeueLTPro-Ex') format('svg');
+  src: url('../fonts/HelveticaNeueLTPro-Ex.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTPro-Ex.otf')  format('opentype'),
+       url('../fonts/HelveticaNeueLTPro-Ex.woff') format('woff'), url('../fonts/HelveticaNeueLTPro-Ex.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTPro-Ex.svg#HelveticaNeueLTPro-Ex') format('svg');
   font-weight: bold;
   font-style: bold;
-}
+}*/
 p,
 a,
 li {
@@ -323,7 +332,7 @@ li {
   p,
   a,
   li {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 p a {
@@ -372,6 +381,7 @@ h5 {
   margin: 0;
   display: inline-block;
   font-weight: normal;
+  font-family: 'HelveticaNeueW02-BdExt', Helvetica, Arial, sans-serif;
   color: #ffffff;
   text-rendering: optimizelegibility;
   -webkit-backface-visibility: hidden;
@@ -385,13 +395,13 @@ h1 {
   font-size: 18px;
 }
 h2 {
-  font-size: 16px;
+  font-size: 14px;
 }
 h3 {
-  font-size: 16px;
+  font-size: 14px;
 }
 h4 {
-  font-size: 16px;
+  font-size: 14px;
 }
 h5 {
   font-size: 12px;
@@ -401,14 +411,14 @@ h5 {
     font-size: 18px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 5px;
   }
   h3 {
     font-size: 14px;
   }
   h4 {
-    font-size: 16px;
+    font-size: 14px;
   }
   h5 {
     font-size: 12px;
@@ -416,19 +426,19 @@ h5 {
 }
 @media only screen and (min-width: 1000px) {
   h1 {
-    font-size: 22px;
+    font-size: 25px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
   h4 {
-    font-size: 16px;
+    font-size: 22px;
   }
   h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 ul,
@@ -444,7 +454,7 @@ li {
 }
 html,
 body {
-  font-family: 'HelveticaNeueLTPro', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeueW02_53 Ext', Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #ffffff;
   background-color: #000000;
@@ -469,7 +479,7 @@ body {
 @media only screen and (min-width: 1000px) {
   html,
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 #theLogo {
@@ -487,6 +497,7 @@ body {
   font-weight: normal;
   z-index: 101;
   background-color: #000000;
+  font-family: 'HelveticaNeueW02-BdExt', Helvetica, Arial, sans-serif;
   position: fixed;
   width: 100%;
   top: 0;
@@ -505,11 +516,11 @@ body {
   right: 40px;
 }
 #desktopMenu a {
-  font-size: 15px;
+  font-size: 14px;
 }
 @media only screen and (min-width: 1000px) {
   #desktopMenu a {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 #desktopMenu a:hover {
@@ -519,7 +530,7 @@ body {
   padding-top: 31px;
 }
 #desktopMenu .submenu a {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
 }
 #desktopMenu .submenu a :hover {
@@ -547,7 +558,7 @@ body {
 }
 .navbar-menu .menu li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .navbar-menu .menu li:hover > .submenu {
   display: block;
@@ -562,7 +573,7 @@ body {
   display: block;
   padding: 0 14px;
   margin-left: 0px;
-  height: 33px;
+  height: 40px;
   background-color: rgba(0, 0, 0, 0.9);
 }
 .navbar-menu .menu li ul li:first-child {
@@ -659,7 +670,7 @@ body {
     padding: 0px 0px 12px 10px;
   }
   .navbar-mini-menu .mini-menu-options .miniMenuSocial {
-    padding: 13px 0 6px 0;
+    padding: 13px 0 16px 0;
     text-align: center;
   }
   .navbar-mini-menu .mini-menu-options .miniMenuSocial img {
@@ -675,6 +686,9 @@ body {
 }
 /*--------------------------------------------------------*/
 /*THE CSS FOR HOLE SITE*/
+#mainWrapper {
+  opacity: 0;
+}
 .imageStartFullscreenWrapper {
   position: absolute;
   left: 0;
@@ -701,21 +715,29 @@ body {
 }
 .imageStartFullscreenWrapper .fullscreenHeadlineBox {
   position: absolute;
+  display: none;
   bottom: 0px;
-  min-height: 20%;
+  min-height: 40%;
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 25px 0px 10px 0px;
   border-top: 1px solid #535353;
+  font-family: 'HelveticaNeueW02-BdExt', Helvetica, Arial, sans-serif;
 }
 @media only screen and (min-width: 750px) {
   .imageStartFullscreenWrapper .fullscreenHeadlineBox {
-    bottom: 55px;
+    bottom: 0px;
+    min-height: 20%;
   }
 }
 .imageStartFullscreenWrapper .fullscreenHeadlineBox a {
-  font-size: 16px;
+  font-size: 18px;
+}
+@media only screen and (min-width: 1000px) {
+  .imageStartFullscreenWrapper .fullscreenHeadlineBox a {
+    font-size: 25px;
+  }
 }
 .imageStartFullscreenWrapper .fullscreenHeadlineBox div {
   padding: 0 20px 0 20px;
@@ -726,6 +748,7 @@ body {
 .imageStartFullscreenWrapper .fullscreenHeadlineBox .headlineBoxArrowDown {
   position: absolute;
   bottom: 10px;
+  height: 40px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -738,7 +761,7 @@ body {
 }
 @media only screen and (min-width: 1000px) {
   .wrapperContainer {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .wrapperContainer .headlineContainer {
@@ -747,7 +770,7 @@ body {
 }
 @media only screen and (min-width: 750px) {
   .wrapperContainer .headlineContainer {
-    padding: 50px 40px 20px 40px;
+    padding: 50px 40px 50px 40px;
     margin-top: 160px;
   }
   .wrapperContainer .headlineContainer .theHeadline {
@@ -792,6 +815,7 @@ body {
     float: left;
     width: 440px;
     padding-right: 28px;
+    padding-bottom: 60px;
   }
 }
 .wrapperContainer .portfolioImageShow {
@@ -856,6 +880,14 @@ body {
     width: 25%;
   }
 }
+.wrapperContainer .previewPortfolio .linkToProject .portfolioElement {
+  font-size: 14px;
+}
+@media only screen and (min-width: 850px) {
+  .wrapperContainer .previewPortfolio .linkToProject .portfolioElement {
+    font-size: 18px;
+  }
+}
 .wrapperContainer .previewPortfolio .linkToProject .portfolioElement .a {
   width: 100%;
   height: auto;
@@ -908,7 +940,7 @@ body {
   padding-top: 15px;
 }
 .wrapperContainer .teaserElement {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .wrapperContainer .teaserElement .teaserImage {
   width: 100%;
@@ -917,12 +949,14 @@ body {
 .wrapperContainer .teaserElement .teaserImage .theImageTag {
   width: 100%;
   height: auto;
+  margin-top: -223px;
 }
 .wrapperContainer .teaserElement .teaserImage .portfolioImage {
   overflow: hidden;
+  height: 400px;
 }
 .projectDescription {
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 20px 20px;
 }
 .projectDescription .tagsProject ul {
   list-style-type: none;
@@ -933,13 +967,14 @@ body {
 }
 @media only screen and (min-width: 750px) {
   .projectDescription {
-    padding: 20px 40px 0px 40px;
+    padding: 50px 40px 40px 40px;
   }
   .projectDescription .dividerWhite {
     display: none;
   }
   .projectDescription .tagsProject {
     float: right;
+    text-align: right;
   }
   .projectDescription .tagsProject ul li {
     margin-bottom: 20px;
@@ -950,13 +985,12 @@ body {
     width: 450px;
   }
   .projectDescription .theShowElementsMenue {
-    float: right;
-    width: 200px;
+    text-align: right;
     margin-top: 0px;
     margin-left: 10px;
   }
 }
-@media only screen and (min-width: 984px) {
+@media only screen and (min-width: 850px) {
   .projectDescription {
     display: flex;
     display: -ms-flexbox;
@@ -969,17 +1003,23 @@ body {
   .projectDescription .projectMainDescription .tagsProject {
     order: 2;
     float: none;
+    width: 180px;
+    text-align: left;
+  }
+  .projectDescription .projectMainDescription .tagsProject ul li {
+    font-size: 16px;
+    line-height: 1.5;
   }
   .projectDescription .projectMainDescription .textProject {
     order: 1;
     float: none;
-    width: 500px;
+    width: 490px;
     padding-right: 40px;
   }
   .projectDescription .theShowElementsMenue {
     order: 3;
     float: none;
-    width: 200px;
+    width: 210px;
     margin-top: 0px;
     text-align: right;
   }
@@ -1109,7 +1149,6 @@ body {
 .allProjectsMenue ul li a {
   background: url("../images/arrow_left.png") no-repeat left center;
   padding-left: 15px;
-  padding-top: 6px;
 }
 .allProjectsMenue ul li a:hover {
   background: none;
@@ -1118,7 +1157,7 @@ body {
 @media only screen and (min-width: 750px) {
   .allProjectsMenue {
     text-align: right;
-    margin-top: -15px;
+    margin-top: -12px;
   }
   .allProjectsMenue ul li {
     margin-left: 35px;
@@ -1172,8 +1211,8 @@ body {
 @media only screen and (min-width: 750px) {
   .headlineContainer .textWrapper {
     float: left;
-    width: 450px;
-    padding-right: 33px;
+    /*width: 450px;
+			padding-right: 33px;*/
   }
 }
 .footerTextSite {
@@ -1190,12 +1229,13 @@ body {
 /*THE FOOTER*/
 #theFooter {
   display: none;
+  font-size: 12px;
 }
 @media only screen and (min-width: 750px) {
   #theFooter {
     display: block;
     position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     height: 40px;
     padding-left: 40px;
     padding-right: 40px;
@@ -1229,14 +1269,14 @@ body {
   }
   #breadcrumps ul li {
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
   }
   #breadcrumps ul li span {
     margin-left: 8px;
     margin-right: 8px;
   }
   #breadcrumps ul li a {
-    font-size: 10px;
+    font-size: 14px;
   }
   #breadcrumps ul li a:hover {
     text-decoration: underline;
@@ -1250,6 +1290,11 @@ body {
 a.blueLink {
   color: #86bacf;
 }
+a.linkFullscreen {
+  background: url('../images/arrow_left.png') no-repeat left center;
+  padding-left: 20px;
+  padding-top: 0px;
+}
 a.linkFullscreen:hover {
   text-decoration: underline;
 }
@@ -1258,7 +1303,7 @@ a {
 }
 @media only screen and (min-width: 1000px) {
   a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .arrowLink {
@@ -1279,7 +1324,7 @@ h1 {
   width: 40px;
   height: 1px;
   background-color: #535353;
-  margin: 20px 0 35px 0;
+  margin: 30px 0 30px 0;
 }
 .dividerBlue {
   top: 30px;
@@ -1331,4 +1376,21 @@ h1 {
 }
 .slick-next:hover {
   background: transparent url("../images/forward_hover.png") no-repeat center center;
+}
+.video-js-responsive-container.vjs-hd {
+  padding-top: 56.25%;
+}
+.video-js-responsive-container.vjs-sd {
+  padding-top: 75%;
+}
+.video-js-responsive-container {
+  width: 100%;
+  position: relative;
+}
+.video-js-responsive-container .video-js {
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

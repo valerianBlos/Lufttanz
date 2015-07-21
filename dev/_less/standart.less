@@ -1,6 +1,11 @@
 /*--------------------------------------------------------*/
 /*THE CSS FOR HOLE SITE*/
 
+#mainWrapper
+{
+	  opacity: 0;
+}
+
 
 .imageStartFullscreenWrapper
 { 
@@ -33,22 +38,35 @@
 	.fullscreenHeadlineBox
 	{
 		position: absolute;
+		display: none;
 		bottom: 0px;
-		min-height: 20%;
+		min-height: 40%;
 		width: 100%;
 		text-align: center;
 		background-color: rgba(0,0,0,0.7);
 		padding: 25px 0px 10px 0px;
 		border-top: 1px solid @borderColor;
+		font-family: @highlightFontFamily;
 
+		div
+		{
+			//display: none;
+		}
+		
 		@media only screen and (min-width: @minWidthTablet) 
 		{
-			bottom: 55px;
+			bottom: 0px;
+			min-height: 20%;
 		}
 
 		a
 		{
-			font-size: @mobileH2FontSize;
+			font-size: @mobileTeaserFontSize;
+
+				@media only screen and (min-width: @minWidthDesktop) 
+				{
+					font-size: @desktopTeaserFontSize;
+				}
 		} 
 
 		div
@@ -65,6 +83,7 @@
 		{
 			position: absolute;
 			bottom: 10px;
+			  height: 40px;
 			left: 0;
 			right: 0;
 			margin-left: auto;
@@ -93,7 +112,7 @@
 
 		@media only screen and (min-width: @minWidthTablet) 
 		{
-			padding: 50px 40px 20px 40px;
+			padding: 50px 40px 50px 40px;
 			margin-top: 160px;
 
 			.theHeadline
@@ -144,6 +163,7 @@
 	  			float: left;  
 	  			width: 440px;
   				padding-right: 28px;
+  				padding-bottom: 60px;
 			}
 		}
 	}
@@ -226,7 +246,13 @@
 
 			.portfolioElement
 			{
+				font-size: 14px;
 
+				@media only screen and (min-width: @widhtBreakpointDesktop) 
+				{
+					font-size: 18px;
+				}
+				
 				.a
 				{
 					width: 100%;
@@ -297,7 +323,7 @@
 
 	.teaserElement
 	{
-		margin-top: 20px;
+		margin-top: 50px;
 
 
 		.teaserImage
@@ -310,11 +336,13 @@
 			{
 				width: 100%;
 				height: auto;
+				  margin-top: -223px;
 			}
 
 			.portfolioImage
 			{
 				overflow: hidden;
+				  height: 400px;
 			}
 
 		}
@@ -323,7 +351,7 @@
 
 .projectDescription
 {
-	padding: 20px 20px 0px 20px;
+	padding: 20px 20px 20px 20px;
 
 	.tagsProject
 	{
@@ -341,7 +369,7 @@
 	
 	@media only screen and (min-width: @minWidthTablet) 
 	{
-		padding: 20px 40px 0px 40px;
+		padding: 50px 40px 40px 40px;
 
 		.dividerWhite
 		{
@@ -351,6 +379,7 @@
 		.tagsProject
 		{
 			float: right;
+			text-align: right;
 			
 			ul li
 			{
@@ -367,8 +396,8 @@
 
 		.theShowElementsMenue
 		{
-			float: right;
-			width: 200px;
+			text-align: right;
+			
 			margin-top: 0px;
 			margin-left: 10px;
 		}
@@ -389,13 +418,21 @@
 			{
 				order: 2;
 				float: none;
+				width: 180px;
+				text-align: left;
+
+				ul li
+				{
+					font-size: 16px;
+					line-height: 1.5;
+				}
 			}
 
 			.textProject
 			{
 				order: 1;
 				float: none;
-				width: 500px;
+				width: 490px;
 				padding-right: 40px;
 			}
 		}
@@ -404,7 +441,7 @@
 		{
 			order: 3;
 			float: none;
-			width: 200px;
+			width: 210px;
 			margin-top: 0px;
 			text-align: right;
 		}				
@@ -578,7 +615,6 @@
 			{
 				background: url("../images/arrow_left.png") no-repeat left center;
 				padding-left: 15px;
-				padding-top: 6px;
 			}
 
 			a:hover
@@ -592,7 +628,7 @@
 	@media only screen and (min-width: @minWidthTablet) 
 	{
 		text-align: right;
-		margin-top: -15px;
+		margin-top: -12px;
 
 		ul
 		{
@@ -677,8 +713,8 @@
 		@media only screen and (min-width: @minWidthTablet) 
 		{
 			float: left;
-			width: 450px;
-			padding-right: 33px;
+			/*width: 450px;
+			padding-right: 33px;*/
 		}
 	}
 }
@@ -701,12 +737,13 @@
 #theFooter
 {
 	display: none;
+	font-size: 12px;
 
 	@media only screen and (min-width: @minWidthTablet) 
 	{
 		display: block;  
 		position: absolute;
-		background-color: black;
+		background-color: rgba(0, 0, 0, 0.0);
 		height: 40px;
 		padding-left: 40px;
 		padding-right: 40px;
@@ -749,7 +786,7 @@
 			li
 			{
 				display: inline-block;
-				font-size: 12px;
+				font-size: @desktopSubMenuFont;
 
 				span
 				{
@@ -759,7 +796,7 @@
 
 				a
 				{
-					font-size: 10px;	
+					font-size: @desktopSubMenuFont;	
 				}
 				a:hover
 				{
@@ -786,6 +823,13 @@
 a.blueLink
 {
 	color: @blue;
+}
+
+a.linkFullscreen
+{
+					background: url('../images/arrow_left.png') no-repeat left center;
+					padding-left: 20px;
+  					padding-top: 0px;
 }
 
 a.linkFullscreen:hover
@@ -831,7 +875,7 @@ h1
 	width: 40px;
 	height: 1px;
 	background-color: @borderColor;
-	margin: 20px 0 35px 0;
+	margin: 30px 0 30px 0;
 
 }
 
@@ -899,8 +943,22 @@ position: absolute;
 	}
 
 
-
-
-
+.video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+}
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+.video-js-responsive-container {
+    width: 100%;
+    position: relative;
+}
+.video-js-responsive-container .video-js {
+    height: 100% !important; 
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
