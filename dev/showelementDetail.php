@@ -23,7 +23,7 @@
 	
 	<div class="releatedProjects">
 		<div>
-			<a href="showElementDetail.php" class="linkToProject">
+			<a href="project.php" class="linkToProject">
 				<div class="portfolioElement">
 					<div class="portfolioTextHover"><span>Luftakrobatik</span><div class="hiddenDescription">Eine kurze Beschreibung</div></div>
 					<div class="portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
@@ -31,7 +31,7 @@
 			</a>
 		</div>
 			<div>
-			<a href="showElementDetail.php" class="linkToProject">
+			<a href="project.php" class="linkToProject">
 				<div class="portfolioElement">
 					<div class="portfolioTextHover"><span>Luftakrobatik</span><div class="hiddenDescription">Eine kurze Beschreibung</div></div>
 					<div class="portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
@@ -39,7 +39,7 @@
 			</a>
 		</div>
 		<div>
-			<a href="showElementDetail.php" class="linkToProject">
+			<a href="project.php" class="linkToProject">
 				<div class="portfolioElement">
 					<div class="portfolioTextHover"><span>Luftakrobatik</span><div class="hiddenDescription">Eine kurze Beschreibung</div></div>
 					<div class="portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>

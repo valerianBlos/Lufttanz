@@ -3,7 +3,7 @@
 
 #mainWrapper
 {
-	  opacity: 0;
+	opacity: 0;
 }
 
 
@@ -15,9 +15,26 @@
 	width: 100%;
 	height: 100%;
 
+		#container {
+			position: relative;
+			overflow: hidden;
+			
+			.content 
+			{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
 	.imageStartFullscreen 
 	{	
 		height: 100%;
+
+		img
+		{
+			width: 100%;
+		}
 	}
 
 	video#bgvid {
@@ -63,10 +80,10 @@
 		{
 			font-size: @mobileTeaserFontSize;
 
-				@media only screen and (min-width: @minWidthDesktop) 
-				{
-					font-size: @desktopTeaserFontSize;
-				}
+			@media only screen and (min-width: @minWidthDesktop) 
+			{
+				font-size: @desktopTeaserFontSize;
+			}
 		} 
 
 		div
@@ -82,8 +99,9 @@
 		.headlineBoxArrowDown
 		{
 			position: absolute;
-			bottom: 10px;
-			  height: 40px;
+			//bottom: 35px;
+			padding-top: 20px;
+			height: 40px;
 			left: 0;
 			right: 0;
 			margin-left: auto;
@@ -107,7 +125,7 @@
 	}
 
 	.headlineContainer{
-		padding: 20px 20px 20px 20px;
+		padding: 20px 20px 40px 20px;
 		margin-top: 90px;
 
 		@media only screen and (min-width: @minWidthTablet) 
@@ -140,13 +158,13 @@
 	}
 
 	.containerText{
-		padding: 20px 20px 20px 20px;
+		padding: 20px 20px 40px 20px;
 		margin-top: 90px;
 
-			.headlineTextContent
-			{
-				padding-bottom: 20px;
-			}
+		.headlineTextContent
+		{
+			padding-bottom: 20px;
+		}
 
 		@media only screen and (min-width: @minWidthTablet) 
 		{
@@ -157,20 +175,43 @@
 			{
 				display: none;
 			}
-	
+
 			.textLeft
 			{
-	  			float: left;  
-	  			width: 440px;
-  				padding-right: 28px;
-  				padding-bottom: 60px;
+				float: left;  
+				width: 440px;
+				padding-right: 28px;
+				padding-bottom: 60px;
 			}
 		}
 	}
 
+	//für ale Seiten außer Project ansicht
 	.portfolioImageShow
 	{
-		margin-top: 37px; 
+		padding-bottom: 40px; 
+
+		.theImageTag
+		{
+			max-width: 100%;
+			max-height: 250px;
+
+			@media only screen and (min-width: @minWidthTablet) 
+			{
+				max-height: 350px;
+			}
+
+			@media only screen and (min-width: @maxWidthTablet) 
+			{
+				max-height: 550px;
+			}
+		}
+
+	}
+
+	.portfolioImageShowProject
+	{
+		margin-top: 40px; 
 
 		@media only screen and (min-width: @widhtBreakpointTablet) 
 		{
@@ -180,14 +221,14 @@
 		.theImageTag
 		{
 			max-width: 100%;
-  			max-height: 250px;
+			max-height: 250px;
 
-	  		@media only screen and (min-width: @minWidthTablet) 
+			@media only screen and (min-width: @minWidthTablet) 
 			{
 				max-height: 350px;
 			}
 
-	  		@media only screen and (min-width: @maxWidthTablet) 
+			@media only screen and (min-width: @maxWidthTablet) 
 			{
 				max-height: 550px;
 			}
@@ -201,13 +242,19 @@
 
 		@media only screen and (min-width: @widhtBreakpointTablet) 
 		{
+			display: -ms-flexbox; 
+			display: -webkit-flex; 
 			display: flex;
-			display: -ms-flexbox;
 			-webkit-flex-wrap: wrap;
 			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 			margin-top: 0px;
+
+			-webkit-flex: 1 1 auto;
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
 		}
+
 
 		.videoShowreel
 		{
@@ -217,32 +264,37 @@
 		.linkToProject
 		{
 
-				.hiddenDescription
-				{
-					display: none;
-				}
+			.hiddenDescription
+			{
+				display: none;
+			}
 
-				:hover > .portfolioTextHover span
-				{
-					color: @blue;
-					background: url('../images/arrow_left.png') no-repeat left center;
-					padding-left: 10px;
-  					padding-top: 3px;
-				}
+			:hover > .portfolioTextHover span
+			{
+				color: @blue;
+				background: url('../images/arrow_left.png') no-repeat left center;
+				padding-left: 10px;
+				padding-top: 3px;
+			}
 
-				height: 210px;
-				width: 100%;
-				position: relative;
+			height: 210px;
+			width: 100%;
+			position: relative;
 
-				@media only screen and (min-width: @widhtBreakpointTablet) 
-				{
-					width: 50%;
-				}
+			@media only screen and (min-width: @widhtBreakpointTablet) 
+			{
+				width: 50%;
+			}
 
-				@media only screen and (min-width: @widhtBreakpointDesktop) 
-				{
-					width: 25%;
-				}
+			@media only screen and (min-width: 650px) 
+			{
+				width: 33%;
+			}
+
+			@media only screen and (min-width: @widhtBreakpointDesktop) 
+			{
+				width: 25%;
+			}
 
 			.portfolioElement
 			{
@@ -278,6 +330,10 @@
 					padding-top: 10px;	
 					padding-bottom: 10px;
 					height: auto;
+
+					padding-left: 3px;
+					padding-right: 3px;
+					
 				}
 			}
 		}
@@ -316,36 +372,101 @@
 				margin-right:auto;
 				background-color: rgba(0,0,0,0.7);
 				height: 32px;
-				padding-top: 15px;				    
+				padding-top: 15px;
+
+				padding-left: 3px;
+				padding-right: 3px;			    
 			}		
 		}
 	}
 
-	.teaserElement
+	.previewPortfolioLatestProduction
 	{
-		margin-top: 50px;
+		margin-top: 20px;
 
-
-		.teaserImage
+		@media only screen and (min-width: @widhtBreakpointTablet) 
 		{
+			display: -ms-flexbox; 
+			display: -webkit-flex; 
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-top: 0px;
+
+			-webkit-flex: 1 1 auto;
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+		}
+
+		.linkToProject
+		{
+
+			.hiddenDescription
+			{
+				display: none;
+			}
+
+			:hover > .portfolioTextHover span
+			{
+				color: @blue;
+				background: url('../images/arrow_left.png') no-repeat left center;
+				padding-left: 10px;
+				padding-top: 3px;
+			}
+
+			height: 300px;
 			width: 100%;
 			position: relative;
 
-
-			.theImageTag
+			@media only screen and (min-width: @widhtBreakpointTablet) 
 			{
-				width: 100%;
-				height: auto;
-				  margin-top: -223px;
+				width: 50%;
 			}
 
-			.portfolioImage
+			.portfolioElement
 			{
-				overflow: hidden;
-				  height: 400px;
-			}
+				font-size: 14px;
 
+				@media only screen and (min-width: @widhtBreakpointDesktop) 
+				{
+					font-size: 18px;
+				}
+				
+				.a
+				{
+					width: 100%;
+					height: auto;
+				}
+
+				.portfolioImage
+				{
+					height: 300px;
+					overflow: hidden;
+				}
+
+				.portfolioTextHover
+				{
+					text-align: center;
+					bottom: 0;
+					position: absolute;    
+					left:0;
+					right:0;
+					margin-left:auto;
+					margin-right:auto;
+					background-color: rgba(0,0,0,0.7);
+					padding-top: 10px;	
+					padding-bottom: 10px;
+					height: auto;
+
+					padding-left: 3px;
+					padding-right: 3px;
+					
+				}
+			}
 		}
+
+
 	}
 }
 
@@ -385,6 +506,8 @@
 			{
 				margin-bottom: 20px;
 				line-height: 1.1;
+				font-size: 12px;
+
 			}
 		}
 
@@ -405,31 +528,56 @@
 
 	@media only screen and (min-width: @widhtBreakpointFloat) 
 	{
+		display: -ms-flexbox; 
+		display: -webkit-flex; 
 		display: flex;
-		display: -ms-flexbox;
+
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+
+		-webkit-box-pack: space-between;
+		-moz-box-pack: space-between;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: space-between;
 		justify-content: space-between;
+		-webkit-align-content: space-between;
+		-ms-flex-line-pack: space-between;
+		align-content: space-between;
 
 		.projectMainDescription
 		{
+			display: -ms-flexbox; 
+			display: -webkit-flex; 
 			display: flex;
-			display: -ms-flexbox;
+			-webkit-flex: 1 1 auto;
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
 			
 			.tagsProject
 			{
+				-webkit-box-ordinal-group: 2;  
+				-moz-box-ordinal-group: 2;     
+				-ms-flex-order: 2;     
+				-webkit-order: 2;  
 				order: 2;
 				float: none;
-				width: 180px;
+				min-width: 250px;
 				text-align: left;
 
 				ul li
 				{
-					font-size: 16px;
+					//font-size: 16px;
 					line-height: 1.5;
 				}
 			}
 
 			.textProject
 			{
+				-webkit-box-ordinal-group: 1;  
+				-moz-box-ordinal-group: 1;     
+				-ms-flex-order: 1;     
+				-webkit-order: 1;  
 				order: 1;
 				float: none;
 				width: 490px;
@@ -439,12 +587,24 @@
 
 		.theShowElementsMenue
 		{
+			-webkit-box-ordinal-group: 3;  
+			-moz-box-ordinal-group: 3;     
+			-ms-flex-order: 3;     
+			-webkit-order: 3;  
 			order: 3;
 			float: none;
 			width: 210px;
 			margin-top: 0px;
 			text-align: right;
 		}				
+	}
+
+	@media only screen and (min-width: @maxWidthTablet) 
+	{
+		.projectMainDescription .tagsProject ul li
+				{
+					font-size: 16px;
+				}
 	}
 }
 
@@ -489,7 +649,7 @@
 			{
 				background: url("../images/arrow_left.png") no-repeat left center;
 				padding-left: 15px;
-				padding-top: 6px;
+				padding-top: 0px;
 			}
 
 			a:hover
@@ -502,101 +662,107 @@
 	}
 }
 
-		.projectDescriptionRelated
+.projectDescriptionRelated
+{
+	margin-top: 20px;
+	padding: 0px 0px 0px 20px;
+
+	@media only screen and (min-width: @widhtBreakpointTablet) 
+	{
+		padding: 0px 0px 0px 40px;
+
+		margin-top: 0px;
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+		-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+		-moz-column-gap: 60px; /* Firefox */
+		column-gap: 60px;
+		max-width: 900px;
+	}
+}
+
+.releatedProjects
+{
+	margin-top: 20px;
+
+	.linkToProject
+	{
+
+		.hiddenDescription
 		{
-			margin-top: 0px
-			padding: 0px 0px 0px 20px;
-
-			@media only screen and (min-width: @widhtBreakpointTablet) 
-			{
-				padding: 0px 0px 0px 40px;
-
-				margin-top: 0px;
-				-webkit-column-count: 2; /* Chrome, Safari, Opera */
-				-moz-column-count: 2; /* Firefox */
-				column-count: 2;
-				-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
-				-moz-column-gap: 60px; /* Firefox */
-				column-gap: 60px;
-				max-width: 900px;
-			}
+			display: none;
 		}
 
-	.releatedProjects
-	{
-		margin-top: 20px;
+		:hover > .portfolioTextHover span
+		{
+			color: @blue;
+			background: url('../images/arrow_left.png') no-repeat left center;
+			padding-left: 10px;
+			padding-top: 3px;
+		}
 
-		.linkToProject
+		height: 210px;
+		width: 100%;
+		position: relative;
+
+		@media only screen and (min-width: @widhtBreakpointTablet) 
+		{
+			width: 50%;
+		}
+
+		@media only screen and (min-width: @widhtBreakpointDesktop) 
+		{
+			width: 25%;
+		}
+
+		.portfolioElement
 		{
 
-				.hiddenDescription
-				{
-					display: none;
-				}
-
-				:hover > .portfolioTextHover span
-				{
-					color: @blue;
-					background: url('../images/arrow_left.png') no-repeat left center;
-					padding-left: 10px;
-  					padding-top: 3px;
-				}
-
-				height: 210px;
-				width: 100%;
-				position: relative;
-
-				@media only screen and (min-width: @widhtBreakpointTablet) 
-				{
-					width: 50%;
-				}
-
-				@media only screen and (min-width: @widhtBreakpointDesktop) 
-				{
-					width: 25%;
-				}
-
-			.portfolioElement
+			.a
 			{
+				width: 100%;
+				height: auto;
+			}
 
-				.a
-				{
-					width: 100%;
-					height: auto;
-				}
-
-				.portfolioImage
-				{
-					img
-					{ 
-						max-height: 150px;
-										@media only screen and (min-width: @widhtBreakpointTablet) 
-				{
-					max-height: 260px;
-				}
-						
+			.portfolioImage
+			{
+				img
+				{ 
+					max-height: 150px;
+					@media only screen and (min-width: @widhtBreakpointTablet) 
+					{
+						max-height: 260px;
 					}
 
-					overflow: hidden;
 				}
 
-				.portfolioTextHover
+				overflow: hidden;
+			}
+
+			.portfolioTextHover
+			{
+				text-align: center;
+				bottom: 0;
+				position: absolute;    
+				left:0;
+				right:0;
+				margin-left:auto;
+				margin-right:auto;
+				background-color: rgba(0,0,0,0.7);
+				padding-top: 10px;	
+				padding-bottom: 10px;
+				height: auto;
+
+				span
 				{
-					text-align: center;
-					bottom: 0;
-					position: absolute;    
-					left:0;
-					right:0;
-					margin-left:auto;
-					margin-right:auto;
-					background-color: rgba(0,0,0,0.7);
-					padding-top: 10px;	
-					padding-bottom: 10px;
-					height: auto;
+					padding-left: 3px;
+					padding-right: 3px;
 				}
 			}
 		}
 	}
+}
 
 .allProjectsMenue
 {
@@ -643,21 +809,21 @@
 
 
 
-	@media only screen and (max-width: @maxWidthMobile) 
-	{
-		/* The animation code */
-		@keyframes showText {
-		    from { opacity: 0; }
-		      to { opacity: 1; }
-		}
-
-		/* The element to apply the animation to */
-		.morecontent span{
-		    animation-name: showText;
-		    animation-duration: .3s;
-		    display: none;
-		}
+@media only screen and (max-width: @maxWidthMobile) 
+{
+	/* The animation code */
+	@keyframes showText {
+		from { opacity: 0; }
+		to { opacity: 1; }
 	}
+
+	/* The element to apply the animation to */
+	.morecontent span{
+		animation-name: showText;
+		animation-duration: .3s;
+		display: none;
+	}
+}
 
 
 /*--------------------------------------------------------*/
@@ -665,18 +831,21 @@
 
 .headlineContainer
 {
-	.projectDescription
-	{
-
-	}
 
 	h1
 	{
-		position: fixed;
 		z-index: 100;
 		background-color: black;
-	  padding: 10px 10px 5px 10px;
-	  margin-left: -10px;
+		padding: 10px 10px 5px 10px;
+		margin-left: -10px;
+	}
+
+	.headlineProject
+	{
+		position: fixed;
+		padding-bottom: 8px;
+		padding-left: 30px;
+		left: 0;
 	}
 
 	@media only screen and (min-width: @widhtBreakpointTablet) 
@@ -684,10 +853,16 @@
 		h1
 		{
 			position: relative;
-			  background-color: transparent;
-			  padding: 0;
-			  margin-left: 0;
-			  z-index: 0;
+			background-color: transparent;
+			padding: 0;
+			margin-left: 0;
+			z-index: 0;
+		}
+
+		.headlineProject
+		{
+			position: relative;
+			padding-bottom: 0px;
 		}
 	}
 
@@ -727,8 +902,8 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	  background-color: black;
-  padding-top: 15px;
+	background-color: black;
+	padding-top: 15px;
 }
 
 /*--------------------------------------------------------*/
@@ -740,10 +915,9 @@
 	font-size: 12px;
 
 	@media only screen and (min-width: @minWidthTablet) 
-	{
-		display: block;  
+	{ 
 		position: absolute;
-		background-color: rgba(0, 0, 0, 0.0);
+		background-color: rgba(0, 0, 0, 1.0);
 		height: 40px;
 		padding-left: 40px;
 		padding-right: 40px;
@@ -758,12 +932,36 @@
 	#footerLeft
 	{
 		float: left;
-		padding-top: 7px;
+		padding-top: 4px;
 	}
 
 	#footerRight
 	{
 		float: right;
+
+		ul
+		{
+			list-style-type: none;
+			li
+			{
+				display: inline-block;
+				padding-left: 10px;
+
+				a
+				{
+					font-size: 12px;
+				}
+
+				span 
+				{
+					display: inline-block;
+					vertical-align: middle;
+					height: 43px;
+				}
+			}
+
+		}
+
 	}
 }
 
@@ -778,6 +976,9 @@
 		display: block;
 		float: right;
 		margin-right: 40px;
+		position: fixed;
+  		right: 0px;
+  		z-index: 100;
 
 		ul
 		{
@@ -827,9 +1028,9 @@ a.blueLink
 
 a.linkFullscreen
 {
-					background: url('../images/arrow_left.png') no-repeat left center;
-					padding-left: 20px;
-  					padding-top: 0px;
+	background: url('../images/arrow_left.png') no-repeat left center;
+	padding-left: 20px;
+	padding-top: 0px;
 }
 
 a.linkFullscreen:hover
@@ -861,7 +1062,7 @@ h1
 
 .headlineBottom
 {
-	padding: 20px 0 20px 20px;
+	padding: 6px 0 20px 20px;
 
 	@media only screen and (min-width: @minWidthTablet) 
 	{
@@ -889,76 +1090,121 @@ h1
 	background-color: @blue;
 }
 
-.slick-arrow{
-position: absolute;
-  z-index: 10;
-  /* margin: auto; */
-  top: 47%;
-}
 
-.slick-prev
+.serviceDivider
 {
-	top: 0;
-    bottom: 0;
-    left: 10px;
-    margin: auto;
-	background: transparent url("../images/back.png") no-repeat center center;
-	border: none;
-	padding: 0 0 0 0;
-	width: 50px;
-	height: 50px;
+	width: 74px;
 
-	@media only screen and (min-width: @minWidthTablet) 
+	@media screen and (min-width: @minWidthDesktop) 
 	{
-		left: 40px;
+		width: 105px;
 	}
 }
 
-.slick-prev:hover
+.portfolioDivider
+{
+	width: 96px;
+
+	@media screen and (min-width: @minWidthDesktop) 
+	{
+		width: 141px;
+	}
+}
+
+.aboutDivider
+{
+	width: 58px;
+
+	@media screen and (min-width: @minWidthDesktop) 
+	{
+		width: 83px;
+	}
+}
+
+.contactDivider
+{
+	width: 83px;
+
+	@media screen and (min-width: @minWidthDesktop) 
+	{
+		width: 122px;
+	}
+}
+
+
+/*
+	Slick Elements
+	*/
+	.slick-arrow{
+		position: absolute;
+		z-index: 10;
+		/* margin: auto; */
+		top: 47%;
+	}
+
+	.slick-prev
+	{
+		top: 0;
+		bottom: 0;
+		left: 10px;
+		margin: auto;
+		background: transparent url("../images/back.png") no-repeat center center;
+		border: none;
+		padding: 0 0 0 0;
+		width: 50px;
+		height: 50px;
+
+		@media only screen and (min-width: @minWidthTablet) 
+		{
+			left: 40px;
+		}
+	}
+
+	.slick-prev:hover
 	{
 		background: transparent url("../images/back_hover.png") no-repeat center center;
 	}
 
-.slick-next
-{
-	top: 0;
-    bottom: 0;
-    right: 10px;
-    margin: auto;
-	background: transparent url("../images/forward.png") no-repeat center center;
-	border: none;
-	padding: 0 0 0 0;
-	width: 50px;
-	height: 50px;
-
-	@media only screen and (min-width: @minWidthTablet) 
+	.slick-next
 	{
-		right: 40px;
-	}
-}
+		top: 0;
+		bottom: 0;
+		right: 10px;
+		margin: auto;
+		background: transparent url("../images/forward.png") no-repeat center center;
+		border: none;
+		padding: 0 0 0 0;
+		width: 50px;
+		height: 50px;
 
-.slick-next:hover
+		@media only screen and (min-width: @minWidthTablet) 
+		{
+			right: 40px;
+		}
+	}
+
+	.slick-next:hover
 	{
 		background: transparent url("../images/forward_hover.png") no-repeat center center;
 	}
 
 
-.video-js-responsive-container.vjs-hd {
-    padding-top: 56.25%;
-}
-.video-js-responsive-container.vjs-sd {
-    padding-top: 75%;
-}
-.video-js-responsive-container {
-    width: 100%;
-    position: relative;
-}
-.video-js-responsive-container .video-js {
-    height: 100% !important; 
-    width: 100% !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+	.video-js-responsive-container.vjs-hd {
+		//padding-top: 56.25%;
+	}
+	.video-js-responsive-container.vjs-sd {
+		padding-top: 75%;
+	}
+	.video-js-responsive-container {
+		width: 100%;
+		position: relative;
+	}
+	.video-js-responsive-container .video-js {
+		height: 100% !important; 
+		width: 100% !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 
 

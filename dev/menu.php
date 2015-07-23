@@ -10,7 +10,7 @@
         <ul class="menu">
           <li><a>SERVICE</a>
             <ul class="submenu">
-              <li><div class="dividerBlue"></div></li>
+              <li><div class="dividerBlue serviceDivider"></div></li>
               <li><a href="servicesGallery.php">Creative Production</a></li>
               <li><a href="servicesGallery.php">High-Class Showacts</a></li>
               <li><a href="servicesGallery.php">Walkingacts</a></li>
@@ -21,7 +21,7 @@
           </li>
           <li><a>PORTFOLIO</a>
             <ul class="submenu">
-              <li><div class="dividerBlue"></div></li>
+              <li><div class="dividerBlue portfolioDivider"></div></li>
               <li><a href="showreel.php">Showreel</a></li>
               <li><a href="allShowElements.php">All Show Elements</a></li>
               <li><a href="allProjects.php">All Projects</a></li>
@@ -29,7 +29,7 @@
           </li>
           <li><a>ABOUT</a>
             <ul class="submenu">
-              <li><div class="dividerBlue"></div></li>              
+              <li><div class="dividerBlue aboutDivider"></div></li>              
               <li><a href="latestProduction.php">Latest Production</a></li>
               <li><a href="textContent.php">Team</a></li>
               <li><a href="textContent.php">Jobs</a></li>
@@ -37,7 +37,7 @@
           </li>
           <li><a>CONTACT</a>
             <ul class="submenu">
-              <li><div class="dividerBlue"></div></li>              
+              <li><div class="dividerBlue contactDivider"></div></li>              
               <li><a href="textContent.php">Contact</a></li>
               <li><a href="textContent.php">Impressum</a></li>
             </ul>

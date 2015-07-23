@@ -1,8 +1,11 @@
 <footer id="theFooter">
 	<div id="footerLeft">&copy; Lufttanz media & performing arts</div>
 	<div id="footerRight">
-	    <a href="#"><img src="images/social_facebook.png"></a>
-        <a href="#"><img src="images/social_youtube.png"></a>
+		<ul>
+			<li><span><a href="textContent.php">Impressum</a></span></li>
+		    <li><a href="#"><img src="images/social_facebook.png"></a></li>
+	        <li><a href="#"><img src="images/social_youtube.png"></a></li>
+   	 	</ul>
     </div>
 </footer>
 
@@ -15,6 +18,7 @@
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/focuspoint.js"></script>
 	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

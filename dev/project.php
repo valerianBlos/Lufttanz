@@ -5,9 +5,9 @@
 
 <div class="wrapperContainer">
 	<div class="headlineContainer">
-		<h1>Diamond Legaue Weltklasse Leichtatheletik</h1>
+		<h1 class="headlineProject">Diamond League Weltklasse Leichtatheletik</h1>
 	</div>
-	<div class="portfolioImageShow">
+	<div class="portfolioImageShowProject">
 		<div><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
 		<div><img src="images/fullscreenStart1.jpg" alt="" class="theImageTag"></div>
 		<div><img src="images/fullscreenStart2.jpg" alt="" class="theImageTag"></div>

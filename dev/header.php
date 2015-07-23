@@ -11,7 +11,7 @@ Probleme: Links in Menu funktionieren noch nicht
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 <meta name="description" content="">
 
     <title>Lufttanz - Media and Performing Art</title>
