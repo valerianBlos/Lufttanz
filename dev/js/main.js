@@ -139,9 +139,11 @@ THE MENU
             event.stopPropagation();
             if(menuState === 0) {
               $(".mini-menu-options").slideDown("slow");
+              $(this).css("background", "url('images/burgerClosed.png') no-repeat");
               menuState = 1;
             } else {
               $(".mini-menu-options").slideUp("slow");
+              $(this).css("background", "url('images/icon.png') no-repeat");
               menuState = 0;
             }
           });
@@ -237,20 +239,22 @@ GENERAL STYLING
       //expand text for projectgallery with mouse over
       function expandTextToggle()
       {
-        $('.linkToProject').each(function(){
+        if(mobileSize == false){ //deactivate in case of mobile device
+          $('.linkToProject').each(function(){
 
-          //mouse in
-          $(this).on("mouseover",function(){
-            console.log("in");
-            $(this).find(".hiddenDescription").slideDown( 300, "linear" );
-          });
+            //mouse in
+            $(this).on("mouseover",function(){
+              //console.log("in");
+              $(this).find(".hiddenDescription").slideDown( 300, "linear" );
+            });
 
-          //mouse out
-          $(this).on("mouseleave",function(){
-            console.log("out");
-            $(this).find(".hiddenDescription").slideUp( 300, "linear" );
+            //mouse out
+            $(this).on("mouseleave",function(){
+              //console.log("out");
+              $(this).find(".hiddenDescription").slideUp( 300, "linear" );
+            });
           });
-        });
+        }
       }
 
       //stop headline scrolling under image
@@ -343,7 +347,7 @@ $(document).on("ready",function() {
               
               // Resize image accordingly
               $('#container').css({
-                'background-image' : 'url(poster.jpg)', 
+                'background-image' : 'url(images/fullscreenStart.jpg)', 
                 'background-size' : 'cover', 
                 'width' : $width+'px', 
                 'height' : $height+'px'
