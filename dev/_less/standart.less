@@ -6,6 +6,74 @@
 	opacity: 0;
 }
 
+#soundControll
+{
+	width: 50px;
+	height: 50px;
+	  position: absolute;
+  z-index: 200;
+   top: 30%;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  @media only screen and (min-width: @minWidthTablet) 		
+  {
+  	width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 200;
+  bottom: 27.5%;
+  right: 40px;
+
+  top: auto;
+  left: auto;
+  }
+}
+
+.soundOff
+{
+	background: url(../images/play.png) no-repeat center center;
+
+	@media only screen and (min-width: @minWidthTablet) 		
+	{
+		background: url(../images/soundOFF.png) no-repeat center center;
+	}
+}
+
+.soundOn
+{
+	background: url(../images/play.png) no-repeat center center;
+
+	@media only screen and (min-width: @minWidthTablet) 		
+	{
+		background: url(../images/soundON.png) no-repeat center center;
+	}
+}
+
+.showReelContainer
+{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 70px;
+	margin: auto;
+
+	@media only screen and (min-width: @minWidthTablet) 		
+	{
+		top: 100px;
+		width: 80%;
+	}
+	@media only screen and (min-width: @maxWidthTablet) 
+	{
+		top: 120px;
+		width: 50%;
+	}
+
+}
 
 .imageStartFullscreenWrapper
 { 
@@ -117,6 +185,7 @@
 	margin-bottom: 40px;
 	font-size: 12px;
 	line-height: 1.5;
+	position: relative;
 
 
 	@media only screen and (min-width: @minWidthDesktop) 
