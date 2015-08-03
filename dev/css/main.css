@@ -493,10 +493,15 @@ body {
     left: 40px;
   }
 }
+@media only screen and (min-width: 1000px) {
+  #theLogo {
+    left: 80px;
+  }
+}
 #theMenu {
   font-weight: normal;
   z-index: 101;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
   font-family: 'HelveticaNeueW02-BdExt', Helvetica, Arial, sans-serif;
   position: fixed;
   width: 100%;
@@ -543,6 +548,11 @@ body {
 }
 #desktopMenu .submenu a:hover {
   color: #86bacf;
+}
+@media only screen and (min-width: 1000px) {
+  #desktopMenu {
+    right: 80px;
+  }
 }
 /******************************************************
                         BIG MENU
@@ -728,6 +738,16 @@ body {
     background: url(../images/soundON.png) no-repeat center center;
   }
 }
+@media only screen and (min-width: 750px) {
+  .soundOff:hover {
+    background: url(../images/soundOFFHover.png) no-repeat center center;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .soundOn:hover {
+    background: url(../images/soundONHover.png) no-repeat center center;
+  }
+}
 .showReelContainer {
   width: 100%;
   position: absolute;
@@ -797,6 +817,14 @@ body {
   border-top: 1px solid #535353;
   font-family: 'HelveticaNeueW02-BdExt', Helvetica, Arial, sans-serif;
 }
+.imageStartFullscreenWrapper .fullscreenHeadlineBox div {
+  padding: 0 20px 0 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .imageStartFullscreenWrapper .fullscreenHeadlineBox div {
+    padding: 0px 80px 0px 80px;
+  }
+}
 @media only screen and (min-width: 750px) {
   .imageStartFullscreenWrapper .fullscreenHeadlineBox {
     bottom: 0px;
@@ -811,9 +839,6 @@ body {
     font-size: 25px;
   }
 }
-.imageStartFullscreenWrapper .fullscreenHeadlineBox div {
-  padding: 0 20px 0 20px;
-}
 .imageStartFullscreenWrapper .fullscreenHeadlineBox img {
   padding: 0 10px 1px 0;
 }
@@ -825,6 +850,13 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+  background: url('../images/arrow_down.png') no-repeat center center;
+}
+@media only screen and (min-width: 1000px) {
+  .imageStartFullscreenWrapper .fullscreenHeadlineBox .headlineBoxArrowDown {
+    background: url('../images/arrow_down_desktop.png') no-repeat center center;
+  }
 }
 .wrapperContainer {
   margin-bottom: 40px;
@@ -835,6 +867,7 @@ body {
 @media only screen and (min-width: 1000px) {
   .wrapperContainer {
     font-size: 16px;
+    margin-bottom: 110px;
   }
 }
 .wrapperContainer .headlineContainer {
@@ -843,11 +876,16 @@ body {
 }
 @media only screen and (min-width: 750px) {
   .wrapperContainer .headlineContainer {
-    padding: 50px 40px 50px 40px;
+    padding: 50px 40px 40px 40px;
     margin-top: 160px;
   }
   .wrapperContainer .headlineContainer .theHeadline {
     float: left;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .wrapperContainer .headlineContainer {
+    padding: 50px 80px 40px 80px;
   }
 }
 .wrapperContainer .headlineContainer .textContainer {
@@ -866,7 +904,7 @@ body {
     -moz-column-gap: 60px;
     /* Firefox */
     column-gap: 60px;
-    max-width: 900px;
+    max-width: 75%;
   }
 }
 .wrapperContainer .containerText {
@@ -889,6 +927,14 @@ body {
     width: 440px;
     padding-right: 28px;
     padding-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .wrapperContainer .containerText {
+    padding: 50px 80px 20px 80px;
+  }
+  .wrapperContainer .containerText .textLeft {
+    padding-bottom: 110px;
   }
 }
 .wrapperContainer .portfolioImageShow {
@@ -1177,7 +1223,7 @@ body {
     -webkit-order: 2;
     order: 2;
     float: none;
-    min-width: 250px;
+    min-width: 180px;
     text-align: left;
   }
   .projectDescription .projectMainDescription .tagsProject ul li {
@@ -1210,6 +1256,11 @@ body {
     font-size: 16px;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .projectDescription {
+    padding: 50px 80px 40px 80px;
+  }
+}
 .projectDescriptionTextOnly {
   padding: 20px 20px 0px 20px;
 }
@@ -1224,6 +1275,11 @@ body {
     float: right;
     width: 200px;
     margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .projectDescriptionTextOnly {
+    padding: 20px 80px 0px 80px;
   }
 }
 .theShowElementsMenue {
@@ -1248,11 +1304,11 @@ body {
 }
 .projectDescriptionRelated {
   margin-top: 20px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 20px 20px;
 }
 @media only screen and (min-width: 450px) {
   .projectDescriptionRelated {
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 20px 40px;
     margin-top: 0px;
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1264,7 +1320,12 @@ body {
     -moz-column-gap: 60px;
     /* Firefox */
     column-gap: 60px;
-    max-width: 900px;
+    max-width: 75%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .projectDescriptionRelated {
+    padding: 0px 0px 20px 80px;
   }
 }
 .releatedProjects {
@@ -1282,7 +1343,6 @@ body {
   color: #86bacf;
   background: url('../images/arrow_left.png') no-repeat left center;
   padding-left: 10px;
-  padding-top: 3px;
 }
 @media only screen and (min-width: 450px) {
   .releatedProjects .linkToProject {
@@ -1323,7 +1383,6 @@ body {
   height: auto;
 }
 .releatedProjects .linkToProject .portfolioElement .portfolioTextHover span {
-  padding-left: 3px;
   padding-right: 3px;
 }
 .allProjectsMenue {
@@ -1396,6 +1455,7 @@ body {
   .headlineContainer .headlineProject {
     position: relative;
     padding-bottom: 0px;
+    padding-left: 0px;
   }
 }
 .headlineContainer .headlineTextContent {
@@ -1424,6 +1484,23 @@ body {
   background-color: black;
   padding-top: 15px;
 }
+@media only screen and (min-width: 750px) {
+  .footerTextSite {
+    display: none;
+  }
+}
+.teaserElement {
+  width: 100%;
+}
+.teaserElement .teaserImage {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+.teaserElement .teaserImage .portfolioImage {
+  width: 100%;
+  height: 300px;
+}
 /*--------------------------------------------------------*/
 /*THE FOOTER*/
 #theFooter {
@@ -1442,6 +1519,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #theFooter {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 #theFooter #footerLeft {
@@ -1501,18 +1584,26 @@ body {
     color: #86bacf;
   }
 }
+@media only screen and (min-width: 1000px) {
+  #breadcrumps {
+    margin-right: 80px;
+  }
+}
 /*--------------------------------------------------------*/
 /*GENERAL STYLING*/
 a.blueLink {
   color: #86bacf;
 }
-a.linkFullscreen {
+a.linkFullscreen:hover {
+  color: #86bacf;
   background: url('../images/arrow_left.png') no-repeat left center;
   padding-left: 20px;
   padding-top: 0px;
 }
-a.linkFullscreen:hover {
-  text-decoration: underline;
+@media only screen and (min-width: 1000px) {
+  a.linkFullscreen:hover {
+    background: url('../images/arrow_left_desktop.png') no-repeat left center;
+  }
 }
 a {
   font-size: 12px;
@@ -1534,6 +1625,11 @@ h1 {
 @media only screen and (min-width: 750px) {
   .headlineBottom {
     padding: 20px 0 20px 40px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .headlineBottom {
+    padding: 20px 0px 20px 80px;
   }
 }
 .dividerWhite {

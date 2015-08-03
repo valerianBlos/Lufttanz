@@ -9,13 +9,18 @@
       bottom: 30px;
       left: 40px
     }
+
+    @media only screen and (min-width: @minWidthDesktop) 
+    {
+      left: 80px
+    }
 }
 
 #theMenu
 {
   font-weight: normal;
   z-index: 101;
-  background-color: @bodyBackground;
+  background-color: @backgroundTransparend;
   font-family: @highlightFontFamily;
   position: fixed;
   width: 100%;
@@ -76,6 +81,12 @@
       color: @blue;
     }
   }
+
+    @media only screen and (min-width: @minWidthDesktop) 
+    {
+      right: 80px;
+    }
+
 }
 
 /******************************************************
@@ -115,7 +126,7 @@
   padding: 0 14px;
   margin-left: 0px;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: @backgroundTransparend;
 
 }
 

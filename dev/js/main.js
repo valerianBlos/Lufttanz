@@ -32,8 +32,11 @@ function _mainConstructor()
       //fadein the main Wrapper on Load
       initTheMenue();
       subMenuAccordion();
+      resizeRect();
       $('.focuspoint').focusPoint();
       $("#startVideoTeaser").fitVids();
+      $("#portfolioImageShowProject div").fitVids();
+
       checkWindowSize();
       generalAnimation(); //text expand
       expandTextToggle(); //show project infos at the gallery
@@ -216,6 +219,13 @@ GENERAL CONTROLL AND OPTION VARIABLES
           $('.allProjectsMenue ul li').on( 'click', 'a', function() {
             var sortByValue = $(this).attr('data-filter');
             $grid.isotope({ filter: sortByValue });
+
+              $(".allProjectsMenue ul li a").each(function(){
+                  $(this).removeClass("blueLink");
+              });
+
+              $(this).addClass("blueLink");
+
           });
         }
 
@@ -380,14 +390,19 @@ GENERAL STYLING
         {
           var bottomImage = $('.portfolioImageShowProject').position().top+$('.portfolioImageShowProject').outerHeight(true)-$(window).scrollTop();
 
-          if(bottomHeadline >= bottomImage)
+          console.log("bottomImage: " + bottomImage);
+          console.log("bottomHeadline: " + bottomHeadline);
+
+          if(80 >= bottomImage)
           {
             //$(".headlineProject").css("position", "absolute");
-            $(".headlineProject").css("top", (bottomImage-$('.headlineProject').outerHeight(true))+"px");
+            $(".headlineProject").css("top", (bottomImage-$('.headlineProject').outerHeight(true))+ 80 + "px");
+            //console.log("no!");
           }
           else
           {
             $(".headlineProject").css("top", ""); 
+            //console.log("jo!");
           }
         }
       }
@@ -423,6 +438,27 @@ GENERAL STYLING
         });
       }
 
+      // Rezize Function for all Images
+      function resizeRect()
+      {
+            //1:1 Ratio
+            $(".previewPortfolio .linkToProject").each(function(){
+                var imageWidth =  $(this).width();
+
+                $(this).css("height", imageWidth);
+                $(this).find(".portfolioImage").css("height", imageWidth);
+            });
+
+
+            //1:1 Ratio for Latest Prduction
+            $(".previewPortfolioLatestProduction .linkToProject").each(function(){
+                var imageWidth =  $(this).width();
+
+                $(this).css("height", imageWidth);
+                $(this).find(".portfolioImage").css("height", imageWidth);
+            });
+      }
+
 /*---------------------- 
 DOCUMENT READY FUNCTION
 -----------------------*/
@@ -445,6 +481,7 @@ $(document).on("ready",function() {
     {
       checkWindowSize();
       if(backgroundVideoInit){adjSize();}
+      resizeRect();
     });
 
     // ----------------------------------  

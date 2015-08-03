@@ -7,7 +7,7 @@
 		<div class="theHeadline"><h1>All Projects</h1></div>
 		<div class="allProjectsMenue">
 			<ul>
-				<li><a href="#" data-filter="*">All Productions</a></li>
+				<li><a href="#" data-filter="*" class="blueLink">All Productions</a></li>
 				<li><a href="#" data-filter=".eventshow">Eventshows</a></li>
 				<li><a href="#" data-filter=".culturalProduction">Cultural Productions</a></li>
 			</ul>
@@ -24,14 +24,14 @@
 		<a href="project.php" class="linkToProject eventshow">
 			<div class="portfolioElement">
 				<div class="portfolioTextHover"><span>Diamond League Weltklasse Leichtatheletik</span><div class="hiddenDescription">Eine kurze Beschreibung</div></div>
-				<div class="focuspoint portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
+				<div class="focuspoint portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart2.jpg" alt="" class="theImageTag"></div>
 			</div>
 		</a>
 
 		<a href="project.php" class="linkToProject eventshow">
 			<div class="portfolioElement">
 				<div class="portfolioTextHover"><span>Diamond League Weltklasse Leichtatheletik</span><div class="hiddenDescription">Eine kurze Beschreibung</div></div>
-				<div class="focuspoint portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
+				<div class="focuspoint portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart2.jpg" alt="" class="theImageTag"></div>
 			</div>
 		</a>	
 		<a href="project.php" class="linkToProject culturalProduction">
@@ -58,7 +58,7 @@
 		<a href="project.php" class="linkToProject eventshow">
 			<div class="portfolioElement">
 				<div class="portfolioTextHover"><span>Diamond League Weltklasse Leichtatheletik</span><div class="hiddenDescription">Eine kurze Beschreibung</div></div>
-				<div class="focuspoint portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart.jpg" alt="" class="theImageTag"></div>
+				<div class="focuspoint portfolioImage" data-focus-x="0" data-focus-y="0"><img src="images/fullscreenStart2.jpg" alt="" class="theImageTag"></div>
 			</div>
 		</a>
 		

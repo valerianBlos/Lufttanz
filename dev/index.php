@@ -18,9 +18,7 @@
             <div>
               <a href="project.php" class="linkFullscreen">1 Diamond-League Weltklasse Leichtathletik Closing-Ceremony, Stadionshow</a>
             </div> 
-            <div class="headlineBoxArrowDown">
-              <img src="images/arrow_down.png" alt="">
-            </div> 
+            <div class="headlineBoxArrowDown"></div> 
           </div>
         </div>
       </div>
@@ -33,24 +31,20 @@
         <div>
           <a href="project.php" class="linkFullscreen">2 Diamond-League Weltklasse Leichtathletik Closing-Ceremony, Stadionshow</a>
         </div> 
-        <div class="headlineBoxArrowDown">
-          <img src="images/arrow_down.png" alt="">
-        </div> 
+        <div class="headlineBoxArrowDown"></div> 
       </div>
     </div>
   </div>
 </div>
 
-<div class="section" id="section2" style="background: url(images/stelzen.jpg) no-repeat; background-size: cover">
+<div class="section" id="section2" style="background: url(images/fullscreenStart2.jpg) no-repeat; background-size: cover">
   <div class="content">
     <div class="imageStartFullscreenWrapper">
       <div class="fullscreenHeadlineBox" id="headlineBoxNumber03">
         <div>
           <a href="project.php" class="linkFullscreen">3 Diamond-League Weltklasse Leichtathletik Closing-Ceremony, Stadionshow</a>
         </div> 
-        <div class="headlineBoxArrowDown">
-          <img src="images/arrow_down.png" alt="">
-        </div> 
+        <div class="headlineBoxArrowDown"></div> 
       </div>
     </div>
   </div>
