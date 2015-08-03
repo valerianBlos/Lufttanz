@@ -10,6 +10,7 @@
 </footer>
 
 </div>
+
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
 	<script src="js/jquery.easings.min.js"></script>

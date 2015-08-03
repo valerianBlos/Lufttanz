@@ -95,6 +95,10 @@
   </header>
 </main>
 <div id="mainWrapper">
+  <!--In case javascript is deactivated-->
+<script>
+  document.getElementById("mainWrapper").style.opacity = 0;
+</script>
 <div class="wrapperContainer">
   <div id="breadcrumps">
     <ul>

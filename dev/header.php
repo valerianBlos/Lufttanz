@@ -18,6 +18,7 @@ Probleme: Links in Menu funktionieren noch nicht
 
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="css/focuspoint.css"/>
 <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
 <link href="video-js/video-js.css" rel="stylesheet">

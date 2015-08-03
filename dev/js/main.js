@@ -22,6 +22,7 @@ var backgroundVideoInit = false;
   //Sizes for Window View Points
   var MobileMaximumWidth = 749;
   var TabletMaximumWidth = 999;
+  var breakPointMobile = 450;
 
 /*---------------------- 
 KONSTRUKTOR FUNCTION
@@ -34,8 +35,8 @@ function _mainConstructor()
       subMenuAccordion();
       resizeRect();
       $('.focuspoint').focusPoint();
-      $("#startVideoTeaser").fitVids();
-      $("#portfolioImageShowProject div").fitVids();
+      //$("#startVideoTeaser").fitVids();
+      //$("#portfolioImageShowProject div").fitVids();
 
       checkWindowSize();
       generalAnimation(); //text expand
@@ -95,8 +96,8 @@ function _mainConstructor()
 GENERAL CONTROLL AND OPTION VARIABLES
 -----------------------*/
 
-    function checkWindowSize()
-    {
+function checkWindowSize()
+{
           //mobile
           if($(window).width() <= MobileMaximumWidth)
           {
@@ -121,8 +122,8 @@ GENERAL CONTROLL AND OPTION VARIABLES
           //console.log(mobileSize + " " + tabletSize + " " + desktopSize );
         }
 
-    function backgroundVideo()
-    {
+        function backgroundVideo()
+        {
 
           backgroundVideoInit = true;
             /*THE VIDEO FUNCTION FOR STARTSITE
@@ -195,12 +196,13 @@ GENERAL CONTROLL AND OPTION VARIABLES
 
 
                 });
-            }
-    }
+}
+}
 
     //theMosaicFunction to Sort Elements in AllProejects
     function theMosaicFunction()
     {
+      console.log("asdad");
       var $grid = $('.previewPortfolio').isotope({
             // options
             itemSelector: '.linkToProject',
@@ -220,11 +222,11 @@ GENERAL CONTROLL AND OPTION VARIABLES
             var sortByValue = $(this).attr('data-filter');
             $grid.isotope({ filter: sortByValue });
 
-              $(".allProjectsMenue ul li a").each(function(){
-                  $(this).removeClass("blueLink");
-              });
+            $(".allProjectsMenue ul li a").each(function(){
+              $(this).removeClass("blueLink");
+            });
 
-              $(this).addClass("blueLink");
+            $(this).addClass("blueLink");
 
           });
         }
@@ -233,7 +235,6 @@ GENERAL CONTROLL AND OPTION VARIABLES
         {
           if($("video").prop('muted'))
           {
-            console.log("unmute");
         $("video").prop('muted', false); //unmute
         $("#soundControll").removeClass("soundOff");
         $("#soundControll").addClass("soundOn");
@@ -241,7 +242,6 @@ GENERAL CONTROLL AND OPTION VARIABLES
       }
       else
       {
-        console.log("mute");
         $("video").prop('muted', true); //unmute
         $("#soundControll").addClass("soundOff");
         $("#soundControll").removeClass("soundOn");
@@ -390,9 +390,6 @@ GENERAL STYLING
         {
           var bottomImage = $('.portfolioImageShowProject').position().top+$('.portfolioImageShowProject').outerHeight(true)-$(window).scrollTop();
 
-          console.log("bottomImage: " + bottomImage);
-          console.log("bottomHeadline: " + bottomHeadline);
-
           if(80 >= bottomImage)
           {
             //$(".headlineProject").css("position", "absolute");
@@ -438,26 +435,48 @@ GENERAL STYLING
         });
       }
 
-      // Rezize Function for all Images
+      // Rezize Function for all Images and Videos
       function resizeRect()
       {
             //1:1 Ratio
-            $(".previewPortfolio .linkToProject").each(function(){
+            if($(window).width() >= breakPointMobile)
+            {
+              $(".previewPortfolio .linkToProject").each(function(){
+                var imageWidth =  $(this).width();
+
+                console.log(imageWidth);
+                $(this).css("height", imageWidth);
+                $(this).find(".portfolioImage").css("height", imageWidth);
+              });
+
+
+              //1:1 Ratio for Latest Prduction
+              $(".previewPortfolioLatestProduction .linkToProject").each(function(){
                 var imageWidth =  $(this).width();
 
                 $(this).css("height", imageWidth);
                 $(this).find(".portfolioImage").css("height", imageWidth);
-            });
-
-
-            //1:1 Ratio for Latest Prduction
-            $(".previewPortfolioLatestProduction .linkToProject").each(function(){
-                var imageWidth =  $(this).width();
-
-                $(this).css("height", imageWidth);
-                $(this).find(".portfolioImage").css("height", imageWidth);
-            });
-      }
+              });
+            }
+            /*if( $( ".portfolioImageShowProject iframe" ).length)
+            {
+              if(mobileSize)
+              {
+                $( ".portfolioImageShowProject iframe" ).height = 250;
+                $( ".portfolioImageShowProject iframe" ).width = 444;
+              }
+              if(tabletSize)
+              {
+                $( ".portfolioImageShowProject iframe" ).height = 350;
+                $( ".portfolioImageShowProject iframe" ).width = 622;
+              }
+              if(desktopSize)
+              {
+                $( ".portfolioImageShowProject iframe" ).height = 550;
+                $( ".portfolioImageShowProject iframe" ).width = 978;
+              }
+            }*/
+          }
 
 /*---------------------- 
 DOCUMENT READY FUNCTION
